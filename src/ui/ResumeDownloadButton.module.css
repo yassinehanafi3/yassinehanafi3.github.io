@@ -1,0 +1,30 @@
+.resumeButton {
+  display: inline-flex;
+  align-items: center;
+  background-color: #64ffda;
+  border: 1px solid #64ffda;
+  color: #0a192f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(100, 255, 218, 0.2);
+}
+
+.resumeButton:hover {
+  background-color: transparent;
+  color: #64ffda;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(100, 255, 218, 0.3);
+}
+
+.downloadIcon {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.buttonText {
+  font-size: 0.9rem;
+} 

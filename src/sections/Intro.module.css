@@ -1,0 +1,51 @@
+.introContent {
+  padding: 2rem 0;
+}
+
+.introTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.introDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #8892b0;
+  margin-bottom: 2rem;
+}
+
+.introImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.introImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.introImage:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .introTitle {
+    font-size: 2rem;
+  }
+  
+  .introDescription {
+    font-size: 1rem;
+  }
+  
+  .introContent {
+    padding: 1rem 0;
+  }
+} 

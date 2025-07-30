@@ -1,0 +1,25 @@
+.textSphere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  margin: 2rem 0;
+}
+
+.textSphere .tagcloud {
+  color: #64ffda;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.textSphere .tagcloud--item {
+  padding: 2px 4px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.textSphere .tagcloud--item:hover {
+  color: #ccd6f6;
+} 

@@ -1,0 +1,54 @@
+.aboutSection {
+  padding: 5rem 0;
+  background: #0a192f;
+}
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.aboutTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #e6f1ff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutDescription {
+  color: #a8b2d1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.interestsText {
+  color: #8892b0;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+.resumeButton {
+  margin-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .aboutDescription {
+    font-size: 1rem;
+  }
+  
+  .interestsText {
+    font-size: 0.95rem;
+  }
+} 

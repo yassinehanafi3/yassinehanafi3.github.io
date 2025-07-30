@@ -1,0 +1,174 @@
+.projectCard {
+  height: 100%;
+  display: flex;
+}
+
+.card {
+  background: linear-gradient(145deg, #0f1419 0%, #1a1f2e 50%, #0f1419 100%);
+  border: 1px solid #2d3748;
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 20px;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #64ffda, #00d4ff, #64ffda, #00d4ff);
+  transform: scaleX(0);
+  transition: transform 0.6s ease;
+  border-radius: 20px 20px 0 0;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  border-color: #64ffda;
+  box-shadow: 
+    0 25px 50px rgba(100, 255, 218, 0.2),
+    0 0 0 1px rgba(100, 255, 218, 0.1);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cardTitle {
+  color: #e6f1ff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #64ffda 0%, #00d4ff 50%, #64ffda 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
+}
+
+.githubLink {
+  color: #8892b0;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  padding: 0.6rem;
+  border-radius: 12px;
+  background: rgba(136, 146, 176, 0.08);
+  border: 1px solid rgba(136, 146, 176, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.githubLink:hover {
+  color: #64ffda;
+  background: rgba(100, 255, 218, 0.15);
+  border-color: rgba(100, 255, 218, 0.3);
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+.githubIcon {
+  transition: transform 0.4s ease;
+}
+
+.githubLink:hover .githubIcon {
+  transform: scale(1.2);
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.projectDescription {
+  color: #a8b2d1;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  flex: 1;
+}
+
+.projectTools {
+  color: #64ffda;
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.15) 0%, rgba(0, 212, 255, 0.1) 100%);
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  display: inline-block;
+  backdrop-filter: blur(5px);
+  margin-top: auto;
+}
+
+.card:hover .projectTools {
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.25) 0%, rgba(0, 212, 255, 0.15) 100%);
+  border-color: rgba(100, 255, 218, 0.5);
+  box-shadow: 
+    0 0 20px rgba(100, 255, 218, 0.3),
+    0 0 40px rgba(100, 255, 218, 0.1);
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+    min-height: 280px;
+  }
+  
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+  
+  .projectDescription {
+    font-size: 0.9rem;
+  }
+  
+  .projectTools {
+    font-size: 0.75rem;
+  }
+} 

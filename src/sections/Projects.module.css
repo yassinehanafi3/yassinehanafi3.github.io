@@ -1,0 +1,89 @@
+.projectsSection {
+  background: #0a192f;
+}
+
+.projectsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projectsTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #e6f1ff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 2rem 0;
+  align-items: stretch;
+}
+
+.projectsGrid > * {
+  height: 100%;
+}
+
+/* Staggered fade-in animation for cards */
+.projectsGrid > *:nth-child(1) { animation: fadeInUp 0.6s ease-out 0.1s both; }
+.projectsGrid > *:nth-child(2) { animation: fadeInUp 0.6s ease-out 0.2s both; }
+.projectsGrid > *:nth-child(3) { animation: fadeInUp 0.6s ease-out 0.3s both; }
+.projectsGrid > *:nth-child(4) { animation: fadeInUp 0.6s ease-out 0.4s both; }
+.projectsGrid > *:nth-child(5) { animation: fadeInUp 0.6s ease-out 0.5s both; }
+.projectsGrid > *:nth-child(6) { animation: fadeInUp 0.6s ease-out 0.6s both; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .projectsGrid > *:nth-child(3) { animation-delay: 0.2s; }
+  .projectsGrid > *:nth-child(4) { animation-delay: 0.3s; }
+  .projectsGrid > *:nth-child(5) { animation-delay: 0.4s; }
+  .projectsGrid > *:nth-child(6) { animation-delay: 0.5s; }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+  .projectsSection {
+    padding: 3rem 0;
+  }
+  
+  .projectsContainer {
+    padding: 0 1rem;
+  }
+  
+  .projectsTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+  
+  .projectsGrid > *:nth-child(2) { animation-delay: 0.2s; }
+  .projectsGrid > *:nth-child(3) { animation-delay: 0.3s; }
+  .projectsGrid > *:nth-child(4) { animation-delay: 0.4s; }
+  .projectsGrid > *:nth-child(5) { animation-delay: 0.5s; }
+  .projectsGrid > *:nth-child(6) { animation-delay: 0.6s; }
+} 

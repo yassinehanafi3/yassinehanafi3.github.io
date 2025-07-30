@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  background-color: #0a192f;
+  min-height: 100vh;
+  color: #8892b0;
+}
+
+/* Typography */
+.title {
+  color: #64ffda;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  color: #ccd6f6;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Layout Components */
+.container {
+  padding: 2rem 0 0 2rem;
+}
+
+.section-wrapper {
+  margin-bottom: 4rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #64ffda;
+  border: 1px solid #64ffda;
+  color: #0a192f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  text-decoration: none;
+}
+
+/* Card Styles */
+.card {
+  background-color: #112240;
+  border: 1px solid #233554;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #64ffda;
+}
+
+.card-title {
+  color: #ccd6f6;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #8892b0;
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: #64ffda !important;
+}
+
+.text-secondary {
+  color: #8892b0 !important;
+}
+
+.text-light {
+  color: #ccd6f6 !important;
+}
+
+.bg-dark {
+  background-color: #0a192f !important;
+}
+
+.bg-darker {
+  background-color: #112240 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+  }
+} 
