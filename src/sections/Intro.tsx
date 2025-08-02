@@ -1,23 +1,28 @@
 import React from 'react';
-import { PERSONAL_INFO } from '../constants/data';
+import { useTranslation } from 'react-i18next';
 import { ResumeDownloadButton } from '../ui';
 import myImage from '../assets/images/profile.png';
 import styles from './Intro.module.css';
 
 const Intro: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="intro" className="container">
       <div className="row align-items-center">
         <div className="col-lg-6 col-md-12">
           <div className={styles.introContent}>
-            <h1 className={styles.introTitle}>
-              Hi, <span style={{color: '#64ffda'}}>{PERSONAL_INFO.name}</span> here.
-            </h1>
+            <h1 
+              className={styles.introTitle}
+              dangerouslySetInnerHTML={{ 
+                __html: t('intro.greeting', { name: t('personal.name') }) 
+              }}
+            />
             <h2 className="section-title">
-              {PERSONAL_INFO.title}
+              {t('intro.title')}
             </h2>
             <p className={styles.introDescription}>
-              {PERSONAL_INFO.description}
+              {t('intro.description')}
             </p>
             <ResumeDownloadButton />
           </div>
@@ -27,7 +32,7 @@ const Intro: React.FC = () => {
             <img 
               className={styles.introImage} 
               src={myImage} 
-              alt={`${PERSONAL_INFO.fullName} profile`} 
+              alt={t('intro.profileAlt', { fullName: t('personal.fullName') })} 
             />
           </div>
         </div>

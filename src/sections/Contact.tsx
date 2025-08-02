@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from './Contact.module.css';
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
@@ -12,7 +14,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     
     // Create email content
-    const emailSubject = subject || 'Portfolio Contact';
+    const emailSubject = subject || t('contact.form.defaultSubject');
     const body = message;
 
     // Create mailto link
@@ -28,16 +30,14 @@ const Contact: React.FC = () => {
 
   return (
     <div id="contact" className="container">
-      <h3 className="title">/contact</h3>
+      <h3 className="title">/{t('navigation.contact')}</h3>
       
       <div className="row">
         <div className="col-md-6">
           <div className={styles.contactInfo}>
-            <h2 className={styles.contactTitle}>Let's Get in Touch</h2>
+            <h2 className={styles.contactTitle}>{t('contact.getInTouch')}</h2>
             <p className={styles.contactDescription}>
-              I enjoy discussing new projects and design challenges. Please share
-              as much info as possible so we can get the most out of our first
-              catch-up.
+              {t('contact.description')}
             </p>
             
             <div className={styles.contactDetails}>
@@ -46,8 +46,8 @@ const Contact: React.FC = () => {
                   <FontAwesomeIcon icon={faMapMarkerAlt} />
                 </div>
                 <div className={styles.contactText}>
-                  <h4>Location</h4>
-                  <p>Casablanca, Morocco</p>
+                  <h4>{t('contact.location')}</h4>
+                  <p>{t('personal.location')}</p>
                 </div>
               </div>
               
@@ -56,12 +56,12 @@ const Contact: React.FC = () => {
                   <FontAwesomeIcon icon={faEnvelope} />
                 </div>
                 <div className={styles.contactText}>
-                  <h4>Email</h4>
+                  <h4>{t('contact.email')}</h4>
                   <a 
                     href="mailto:elhanafiyassine21@gmail.com" 
                     className={styles.contactLink}
                   >
-                    elhanafiyassine21@gmail.com
+                    {t('personal.email')}
                   </a>
                 </div>
               </div>
@@ -71,12 +71,12 @@ const Contact: React.FC = () => {
                   <FontAwesomeIcon icon={faPhone} />
                 </div>
                 <div className={styles.contactText}>
-                  <h4>Phone</h4>
+                  <h4>{t('contact.phone')}</h4>
                   <a 
                     href="tel:+212708161260" 
                     className={styles.contactLink}
                   >
-                    +212 708 161 260
+                    {t('personal.phone')}
                   </a>
                 </div>
               </div>
@@ -105,24 +105,24 @@ const Contact: React.FC = () => {
         
         <div className="col-md-6">
           <div className={styles.contactForm}>
-            <h2 className={styles.contactTitle}>Send Me an Email</h2>
+            <h2 className={styles.contactTitle}>{t('contact.form.sendEmailTitle')}</h2>
             <p className={styles.contactDescription}>
-              Write your message below and click "Send" to open your email client.
+              {t('contact.form.sendEmailDescription')}
             </p>
             <form onSubmit={handleSubmit} className={styles.form}>
               <div className={styles.formGroup}>
-                <label className={styles.label}>Subject:</label>
+                <label className={styles.label}>{t('contact.form.subject')}:</label>
                 <input
                   type="text"
                   name="subject"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   className={styles.input}
-                  placeholder="Enter subject (optional)"
+                  placeholder={t('contact.form.subjectPlaceholder')}
                 />
               </div>
               <div className={styles.formGroup}>
-                <label className={styles.label}>Your Message:</label>
+                <label className={styles.label}>{t('contact.form.messagePlaceholder')}</label>
                 <textarea
                   name="message"
                   value={message}
@@ -134,7 +134,7 @@ const Contact: React.FC = () => {
               </div>
               
               <button type="submit" className={styles.submitButton}>
-                Send
+                {t('contact.form.sendButton')}
               </button>
             </form>
           </div>
