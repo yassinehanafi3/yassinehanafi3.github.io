@@ -1,0 +1,118 @@
+{
+  "navigation": {
+    "intro": "intro",
+    "about": "about",
+    "experience": "experience",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "intro": {
+    "greeting": "Hi, <span style=\"color: #64ffda\">{{name}}</span> here.",
+    "title": "Software Engineer",
+    "description": "Welcome! I'm EL HANAFI, a passionate software engineer based in Casablanca, Morocco. I specialize in building innovative and scalable digital solutions that solve real-world problems. Let's connect and bring your vision to life.",
+    "profileAlt": "{{fullName}} profile"
+  },
+  "about": {
+    "description": "Software Engineer with a passion for programming and problem-solving. Proficient in full-stack development with Spring and Angular, and experienced in delivering impactful solutions at leading companies. I thrive on crafting clean, efficient code and transforming complex ideas into real-world applications.",
+    "interests": "Outside of work, I'm interested in following the developments of science. I also play a lot of video games. And watch series."
+  },
+  "contact": {
+    "getInTouch": "Let's Get in Touch",
+    "description": "I enjoy discussing new projects and design challenges. Please share as much info as possible so we can get the most out of our first catch-up.",
+    "location": "Location",
+    "email": "Email",
+    "phone": "Phone",
+    "form": {
+      "subject": "Subject",
+      "message": "Message",
+      "sendMessage": "Send Message",
+      "defaultSubject": "Portfolio Contact",
+      "sendEmailTitle": "Send Me an Email",
+      "sendEmailDescription": "Write your message below and click \"Send\" to open your email client.",
+      "subjectPlaceholder": "Enter subject (optional)",
+      "messagePlaceholder": "Your Message:",
+      "sendButton": "Send"
+    }
+  },
+  "personal": {
+    "name": "EL HANAFI",
+    "fullName": "EL HANAFI YASSINE",
+    "title": "Software Engineer",
+    "location": "Casablanca, Morocco",
+    "email": "elhanafiyassine21@gmail.com",
+    "phone": "+212 708 161 260"
+  },
+  "projects": {
+    "tools": "Tools",
+    "cliffford": {
+      "title": "Cliffford",
+      "description": "Chatbot with hand gesture control using computer vision and neural networks. Includes real-time data sync and user authentication."
+    },
+    "pokerPlanning": {
+      "title": "Poker Planning",
+      "description": "Web tool for team estimation with live voting and real-time updates. Supports interactive sessions for planning tasks."
+    },
+    "tawajooh": {
+      "title": "Tawajooh",
+      "description": "Web app to manage student applications. Handles form submission, document tracking, and status updates."
+    },
+    "hospitalManagement": {
+      "title": "Hospital Management",
+      "description": "Desktop app for scheduling, patient records, and doctor availability. Includes data storage and caching."
+    },
+    "blogger": {
+      "title": "Blogger",
+      "description": "Platform for creating and managing blog posts. Includes user login, editing, and comment features."
+    },
+    "ensetCandidature": {
+      "title": "ENSET Candidature",
+      "description": "Admissions management tool for schools. Supports application tracking, evaluation, and scoring."
+    },
+    "astreintEase": {
+      "title": "AstreintEase",
+      "description": "Web app for managing on-call requests with approval workflows and calendar sync. Built using microservices."
+    },
+    "orangeStaffing": {
+      "title": "Orange Staffing",
+      "description": "Tool for handling internal recruitment. Manages job listings, applications, and interview scheduling."
+    }
+  },
+  "experience": {
+    "inetum": {
+      "company": "Inetum",
+      "title": "Software Engineer",
+      "date": "JAN 2025 - PRESENT",
+      "description": "Worked on a financial system used by local authorities in France. Built and updated features, handled real-time data, and took part in team sprints."
+    },
+    "orangeBusinessServices": {
+      "company": "Orange Business Services",
+      "title": "Software Engineer",
+      "date1": "FEB 2024 - AUG 2024",
+      "description1": "Developed backend and frontend for a request validation tool. Set up microservices with service discovery, load balancing, and external config.",
+      "date2": "JULY 2023 - SEPT 2023",
+      "description2": "Created a tool for managing hiring steps from posting to selection. Used rapid development tools to speed up setup and deployment."
+    },
+    "cegedim": {
+      "company": "CEGEDIM",
+      "title": "Software Engineer",
+      "date": "JULY 2022 - SEPT 2022",
+      "description": "Built a real-time web app for team planning sessions. Used WebSockets for live updates and handled voting and interaction logic."
+    },
+    "men": {
+      "company": "Direction Provinciale de l'Éducation Nationale",
+      "title": "Software Engineer",
+      "date": "MARCH 2021 - MAY 2021",
+      "description": "Developed \"Tawajooh\", a student application management system that streamlined administrative processes for students."
+    }
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  },
+  "resume": {
+    "download": "Download Resume"
+  },
+  "skills": {
+    "intro": "Here are some technologies I have been working with:"
+  }
+} 

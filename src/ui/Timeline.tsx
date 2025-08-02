@@ -1,10 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container } from 'react-bootstrap';
-import { Experience } from '../types';
 import styles from './Timeline.module.css';
 
 interface TimelineItemProps {
-  data: Experience;
+  data: {
+    id: string;
+    companyName: string;
+    title: string;
+    date: string;
+    description: string;
+    skills: string;
+    link: string;
+    isActive: boolean;
+  };
   isActive: boolean;
 }
 
@@ -46,14 +55,67 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data, isActive }) => {
   );
 };
 
-interface TimelineProps {
-  experiences: Experience[];
-}
+interface TimelineProps {}
 
-const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
+const Timeline: React.FC<TimelineProps> = () => {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const timelineRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // Create experiences data from translations
+  const experiences = [
+    {
+      id: "1",
+      companyName: t('experience.inetum.company'),
+      title: t('experience.inetum.title'),
+      date: t('experience.inetum.date'),
+      description: t('experience.inetum.description'),
+      skills: "Spring Boot · Angular · RabbitMQ · PostgreSQL · SCRUM · GitLab · OpenFeign · Lua · Nginx",
+      link: "https://www.linkedin.com/company/inetum/",
+      isActive: true,
+    },
+    {
+      id: "2",
+      companyName: t('experience.orangeBusinessServices.company'),
+      title: t('experience.orangeBusinessServices.title'),
+      date: t('experience.orangeBusinessServices.date1'),
+      description: t('experience.orangeBusinessServices.description1'),
+      skills: "Microservices · Java · Spring Boot · Spring Cloud · Angular · MySQL · SCRUM · Git · Eureka · OpenFeign",
+      link: "https://www.linkedin.com/company/orange-business-services-maroc",
+      isActive: false,
+    },
+    {
+      id: "3",
+      companyName: t('experience.orangeBusinessServices.company'),
+      title: t('experience.orangeBusinessServices.title'),
+      date: t('experience.orangeBusinessServices.date2'),
+      description: t('experience.orangeBusinessServices.description2'),
+      skills: "Java · Spring Boot · Angular · Bootstrap · MySQL · SCRUM · Git · JHipster",
+      link: "https://www.linkedin.com/company/orange-business-services-maroc",
+      isActive: false,
+    },
+    {
+      id: "4",
+      companyName: t('experience.cegedim.company'),
+      title: t('experience.cegedim.title'),
+      date: t('experience.cegedim.date'),
+      description: t('experience.cegedim.description'),
+      skills: "Java · Spring Boot · React.js · Tailwind CSS · MySQL · SCRUM · Git",
+      link: "https://www.linkedin.com/company/cegedim/",
+      isActive: false,
+    },
+    {
+      id: "5",
+      companyName: t('experience.men.company'),
+      title: t('experience.men.title'),
+      date: t('experience.men.date'),
+      description: t('experience.men.description'),
+      skills: "Flask · HTML/CSS · JavaScript · Bootstrap · Firebase Realtime Database · Python",
+      link: "https://www.men.gov.ma/",
+      isActive: false,
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {

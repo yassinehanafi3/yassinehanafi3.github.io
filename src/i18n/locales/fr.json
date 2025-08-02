@@ -1,0 +1,118 @@
+{
+  "navigation": {
+    "intro": "accueil",
+    "about": "à propos",
+    "experience": "expérience",
+    "projects": "projets",
+    "contact": "contact"
+  },
+  "intro": {
+    "greeting": "Salut, <span style=\"color: #64ffda\">{{name}}</span> ici.",
+    "title": "Ingénieur Logiciel",
+    "description": "Bienvenue ! Je suis EL HANAFI, un ingénieur logiciel passionné basé à Casablanca, Maroc. Je me spécialise dans la création de solutions numériques innovantes et évolutives qui résolvent des problèmes réels. Connectons-nous et donnons vie à votre vision.",
+    "profileAlt": "profil {{fullName}}"
+  },
+  "about": {
+    "description": "Ingénieur logiciel passionné par la programmation et la résolution de problèmes. Compétent en développement full-stack avec Spring et Angular, et expérimenté dans la livraison de solutions impactantes dans des entreprises de premier plan. Je m'épanouis en créant du code propre et efficace et en transformant des idées complexes en applications concrètes.",
+    "interests": "En dehors du travail, je m'intéresse aux développements scientifiques. Je joue aussi beaucoup aux jeux vidéo. Et je regarde des séries."
+  },
+  "contact": {
+    "getInTouch": "Contactons-nous",
+    "description": "J'aime discuter de nouveaux projets et de défis de conception. Partagez autant d'informations que possible pour que nous puissions tirer le meilleur parti de notre première rencontre.",
+    "location": "Localisation",
+    "email": "Email",
+    "phone": "Téléphone",
+    "form": {
+      "subject": "Sujet",
+      "message": "Message",
+      "sendMessage": "Envoyer le Message",
+      "defaultSubject": "Contact Portfolio",
+      "sendEmailTitle": "Envoyez-moi un Email",
+      "sendEmailDescription": "Écrivez votre message ci-dessous et cliquez sur \"Envoyer\" pour ouvrir votre client email.",
+      "subjectPlaceholder": "Entrez le sujet (optionnel)",
+      "messagePlaceholder": "Votre Message :",
+      "sendButton": "Envoyer"
+    }
+  },
+  "personal": {
+    "name": "EL HANAFI",
+    "fullName": "EL HANAFI YASSINE",
+    "title": "Ingénieur Logiciel",
+    "location": "Casablanca, Maroc",
+    "email": "elhanafiyassine21@gmail.com",
+    "phone": "+212 708 161 260"
+  },
+  "projects": {
+    "tools": "Outils",
+    "cliffford": {
+      "title": "Cliffford",
+      "description": "Chatbot avec contrôle par gestes de la main utilisant la vision par ordinateur et les réseaux de neurones. Inclut la synchronisation de données en temps réel et l'authentification utilisateur."
+    },
+    "pokerPlanning": {
+      "title": "Poker Planning",
+      "description": "Outil web pour l'estimation d'équipe avec vote en direct et mises à jour en temps réel. Prend en charge les sessions interactives pour la planification des tâches."
+    },
+    "tawajooh": {
+      "title": "Tawajooh",
+      "description": "Application web pour gérer les candidatures d'étudiants. Gère la soumission de formulaires, le suivi des documents et les mises à jour de statut."
+    },
+    "hospitalManagement": {
+      "title": "Gestion Hospitalière",
+      "description": "Application de bureau pour la planification, les dossiers patients et la disponibilité des médecins. Inclut le stockage de données et la mise en cache."
+    },
+    "blogger": {
+      "title": "Blogger",
+      "description": "Plateforme pour créer et gérer des articles de blog. Inclut la connexion utilisateur, l'édition et les fonctionnalités de commentaires."
+    },
+    "ensetCandidature": {
+      "title": "ENSET Candidature",
+      "description": "Outil de gestion des admissions pour les écoles. Prend en charge le suivi des candidatures, l'évaluation et le scoring."
+    },
+    "astreintEase": {
+      "title": "AstreintEase",
+      "description": "Application web pour gérer les demandes d'astreinte avec des flux d'approbation et la synchronisation de calendrier. Construite avec des microservices."
+    },
+    "orangeStaffing": {
+      "title": "Orange Staffing",
+      "description": "Outil pour gérer le recrutement interne. Gère les offres d'emploi, les candidatures et la planification des entretiens."
+    }
+  },
+  "experience": {
+    "inetum": {
+      "company": "Inetum",
+      "title": "Ingénieur Logiciel",
+      "date": "JAN 2025 - PRÉSENT",
+      "description": "Travaillé sur un système financier utilisé par les autorités locales en France. Construit et mis à jour des fonctionnalités, géré des données en temps réel et participé aux sprints d'équipe."
+    },
+    "orangeBusinessServices": {
+      "company": "Orange Business Services",
+      "title": "Ingénieur Logiciel",
+      "date1": "FÉV 2024 - AOÛT 2024",
+      "description1": "Développé le backend et frontend pour un outil de validation de demandes. Mis en place des microservices avec découverte de service, équilibrage de charge et configuration externe.",
+      "date2": "JUILLET 2023 - SEPT 2023",
+      "description2": "Créé un outil pour gérer les étapes de recrutement de la publication à la sélection. Utilisé des outils de développement rapide pour accélérer la configuration et le déploiement."
+    },
+    "cegedim": {
+      "company": "CEGEDIM",
+      "title": "Ingénieur Logiciel",
+      "date": "JUILLET 2022 - SEPT 2022",
+      "description": "Construit une application web en temps réel pour les sessions de planification d'équipe. Utilisé WebSockets pour les mises à jour en direct et géré la logique de vote et d'interaction."
+    },
+    "men": {
+      "company": "Direction Provinciale de l'Éducation Nationale",
+      "title": "Ingénieur Logiciel",
+      "date": "MARS 2021 - MAI 2021",
+      "description": "Développé \"Tawajooh\", un système de gestion des candidatures d'étudiants qui a rationalisé les processus administratifs pour les étudiants."
+    }
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  },
+  "resume": {
+    "download": "Télécharger le CV"
+  },
+  "skills": {
+    "intro": "Voici quelques technologies avec lesquelles j'ai travaillé :"
+  }
+} 

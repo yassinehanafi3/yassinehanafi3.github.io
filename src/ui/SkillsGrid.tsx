@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './SkillsGrid.module.css';
 
 // Import technology icons
@@ -8,6 +9,8 @@ import javaIcon from '../assets/icons/java.png';
 import angularIcon from '../assets/icons/angular.png';
 
 const SkillsGrid: React.FC = () => {
+  const { t } = useTranslation();
+  
   const technologies = [
     { name: 'Java', icon: javaIcon, hasAsset: true },
     { name: 'Spring Boot', icon: springBootIcon, hasAsset: true },
@@ -17,7 +20,7 @@ const SkillsGrid: React.FC = () => {
 
   return (
     <div className={styles.skillsContainer}>
-      <p className={styles.skillsIntro}>Here are some technologies I have been working with:</p>
+      <p className={styles.skillsIntro}>{t('skills.intro')}</p>
       <div className={styles.technologiesList}>
         {technologies.map((tech, index) => (
           <div
