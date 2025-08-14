@@ -1,0 +1,119 @@
+{
+  "navigation": {
+    "intro": "Startseite",
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "intro": {
+    "greeting": "Hallo, hier ist <span style=\"color: #64ffda\">{{name}}</span>.",
+    "title": "Softwareentwickler",
+    "description": "Willkommen! Ich bin EL HANAFI, ein leidenschaftlicher Softwareentwickler aus Casablanca, Marokko. Ich bin spezialisiert auf die Entwicklung innovativer und skalierbarer digitaler Lösungen, die reale Probleme lösen. Lassen Sie uns in Kontakt treten und Ihre Vision zum Leben erwecken.",
+    "profileAlt": "Profil von {{fullName}}"
+  },
+  "about": {
+    "description": "Softwareentwickler mit einer Leidenschaft für Programmierung und Problemlösung. Kompetent in der Full-Stack-Entwicklung mit Spring und Angular sowie erfahren in der Bereitstellung wirkungsvoller Lösungen bei führenden Unternehmen. Ich blühe auf, wenn ich sauberen, effizienten Code erstelle und komplexe Ideen in praktische Anwendungen umwandle.",
+    "interests": "Außerhalb der Arbeit interessiere ich mich für wissenschaftliche Entwicklungen. Ich spiele auch viel Videospiele und schaue Serien."
+  },
+  "contact": {
+    "getInTouch": "Lassen Sie uns in Kontakt treten",
+    "description": "Ich diskutiere gerne über neue Projekte und Design-Herausforderungen. Bitte teilen Sie so viele Informationen wie möglich mit, damit wir das Beste aus unserem ersten Treffen herausholen können.",
+    "location": "Standort",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "form": {
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "sendMessage": "Nachricht senden",
+      "defaultSubject": "Portfolio Kontakt",
+      "sendEmailTitle": "Senden Sie mir eine E-Mail",
+      "sendEmailDescription": "Schreiben Sie Ihre Nachricht unten und klicken Sie auf \"Senden\", um Ihren E-Mail-Client zu öffnen.",
+      "subjectPlaceholder": "Betreff eingeben (optional)",
+      "messagePlaceholder": "Ihre Nachricht:",
+      "sendButton": "Senden"
+    }
+  },
+  "personal": {
+    "name": "EL HANAFI",
+    "fullName": "EL HANAFI YASSINE",
+    "title": "Softwareentwickler",
+    "location": "Casablanca, Marokko",
+    "email": "elhanafiyassine21@gmail.com",
+    "phone": "+212 708 161 260"
+  },
+  "projects": {
+    "tools": "Werkzeuge",
+    "cliffford": {
+      "title": "Cliffford",
+      "description": "Chatbot mit Handgesten-Steuerung unter Verwendung von Computer Vision und neuronalen Netzen. Enthält Echtzeit-Datensynchronisation und Benutzerauthentifizierung."
+    },
+    "pokerPlanning": {
+      "title": "Poker Planning",
+      "description": "Web-Tool für Team-Schätzungen mit Live-Abstimmung und Echtzeit-Updates. Unterstützt interaktive Sitzungen für die Aufgabenplanung."
+    },
+    "tawajooh": {
+      "title": "Tawajooh",
+      "description": "Web-App zur Verwaltung von Studentenbewerbungen. Behandelt Formularübermittlung, Dokumentenverfolgung und Statusaktualisierungen."
+    },
+    "hospitalManagement": {
+      "title": "Krankenhausverwaltung",
+      "description": "Desktop-App für Terminplanung, Patientenakten und Arztverfügbarkeit. Enthält Datenspeicherung und Caching."
+    },
+    "blogger": {
+      "title": "Blogger",
+      "description": "Plattform zum Erstellen und Verwalten von Blog-Beiträgen. Enthält Benutzeranmeldung, Bearbeitung und Kommentarfunktionen."
+    },
+    "ensetCandidature": {
+      "title": "ENSET Bewerbung",
+      "description": "Zulassungsverwaltungstool für Schulen. Unterstützt Bewerbungsverfolgung, Bewertung und Bewertungssystem."
+    },
+    "astreintEase": {
+      "title": "AstreintEase",
+      "description": "Web-App zur Verwaltung von Bereitschaftsanfragen mit Genehmigungsworkflows und Kalendersynchronisation. Erstellt mit Microservices."
+    },
+    "orangeStaffing": {
+      "title": "Orange Staffing",
+      "description": "Tool für die interne Rekrutierung. Verwaltet Stellenausschreibungen, Bewerbungen und Interviewplanung."
+    }
+  },
+  "experience": {
+    "inetum": {
+      "company": "Inetum",
+      "title": "Softwareentwickler",
+      "date": "JAN 2025 - HEUTE",
+      "description": "Arbeitete an einem Finanzsystem, das von lokalen Behörden in Frankreich genutzt wird. Entwickelte und aktualisierte Funktionen, behandelte Echtzeitdaten und nahm an Team-Sprints teil."
+    },
+    "orangeBusinessServices": {
+      "company": "Orange Business Services",
+      "title": "Softwareentwickler",
+      "date1": "FEB 2024 - AUG 2024",
+      "description1": "Entwickelte Backend und Frontend für ein Anfragevalidierungstool. Implementierte Microservices mit Service Discovery, Lastausgleich und externer Konfiguration.",
+      "date2": "JULI 2023 - SEPT 2023",
+      "description2": "Erstellte ein Tool zur Verwaltung der Einstellungsschritte von der Ausschreibung bis zur Auswahl. Verwendete Rapid-Development-Tools, um Setup und Bereitstellung zu beschleunigen."
+    },
+    "cegedim": {
+      "company": "CEGEDIM",
+      "title": "Softwareentwickler",
+      "date": "JULI 2022 - SEPT 2022",
+      "description": "Entwickelte eine Echtzeit-Web-App für Team-Planungssitzungen. Verwendete WebSockets für Live-Updates und behandelte Abstimmungs- und Interaktionslogik."
+    },
+    "men": {
+      "company": "Direction Provinciale de l'Éducation Nationale",
+      "title": "Softwareentwickler",
+      "date": "MÄRZ 2021 - MAI 2021",
+      "description": "Entwickelte \"Tawajooh\", ein Studentenbewerbungsverwaltungssystem, das administrative Prozesse für Studenten rationalisierte."
+    }
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch"
+  },
+  "resume": {
+    "download": "Lebenslauf herunterladen"
+  },
+  "skills": {
+    "intro": "Hier sind einige Technologien, mit denen ich gearbeitet habe:"
+  }
+}
