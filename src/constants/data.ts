@@ -141,5 +141,5 @@ export const PERSONAL_INFO = {
   location: "Casablanca, Morocco",
   description: "Welcome! I’m EL HANAFI, a passionate software engineer based in Casablanca, Morocco. I specialize in building innovative and scalable digital solutions that solve real-world problems. Let’s connect and bring your vision to life.",
   aboutDescription: "Software Engineer with a passion for programming and problem-solving. Proficient in full-stack development with Spring and Angular, and experienced in delivering impactful solutions at leading companies. I thrive on crafting clean, efficient code and transforming complex ideas into real-world applications.",
-  resumeUrl: "/Resume_Yassine_EL_HANAFI_2025.pdf"
+  resumeUrl: "/Resume_Yassine_EL_HANAFI.pdf"
 }; 

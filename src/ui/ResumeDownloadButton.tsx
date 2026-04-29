@@ -14,8 +14,8 @@ const ResumeDownloadButton: React.FC<ResumeDownloadButtonProps> = ({ className, 
 
   return (
     <a
-      href="/Resume_Yassine_EL_HANAFI_2025.pdf"
-      download="Resume_Yassine_EL_HANAFI_2025.pdf"
+      href="/Resume_Yassine_EL_HANAFI.pdf"
+      download="Resume_Yassine_EL_HANAFI.pdf"
       className={[styles.resumeButton, size === 'hero' && styles.resumeButtonHero, className]
         .filter(Boolean)
         .join(' ')}
