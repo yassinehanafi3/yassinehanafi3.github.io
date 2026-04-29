@@ -7,18 +7,24 @@
     "contact": "Kontakt"
   },
   "intro": {
-    "greeting": "Hallo, hier ist <span style=\"color: #64ffda\">{{name}}</span>.",
-    "title": "Softwareentwickler",
+    "greeting": "Hallo, hier ist <span style=\"color: var(--primary)\">{{name}}</span>.",
+    "title": "Softwareentwickler (Java / Angular)",
     "description": "Willkommen! Ich bin EL HANAFI, ein leidenschaftlicher Softwareentwickler aus Casablanca, Marokko. Ich bin spezialisiert auf die Entwicklung innovativer und skalierbarer digitaler Lösungen, die reale Probleme lösen. Lassen Sie uns in Kontakt treten und Ihre Vision zum Leben erwecken.",
-    "profileAlt": "Profil von {{fullName}}"
+    "profileAlt": "Profil von {{fullName}}",
+    "availability": "Offen für neue Möglichkeiten",
+    "trust1": "Backend-Systeme in Produktionsqualität",
+    "trust2": "Microservices & verteilte Architektur",
+    "trust3": "Angular + Spring Boot",
+    "secondaryCta": "Kontakt aufnehmen"
   },
   "about": {
     "description": "Softwareentwickler mit einer Leidenschaft für Programmierung und Problemlösung. Kompetent in der Full-Stack-Entwicklung mit Spring und Angular sowie erfahren in der Bereitstellung wirkungsvoller Lösungen bei führenden Unternehmen. Ich blühe auf, wenn ich sauberen, effizienten Code erstelle und komplexe Ideen in praktische Anwendungen umwandle.",
     "interests": "Außerhalb der Arbeit interessiere ich mich für wissenschaftliche Entwicklungen. Ich spiele auch viel Videospiele und schaue Serien."
   },
   "contact": {
-    "getInTouch": "Lassen Sie uns in Kontakt treten",
-    "description": "Ich diskutiere gerne über neue Projekte und Design-Herausforderungen. Bitte teilen Sie so viele Informationen wie möglich mit, damit wir das Beste aus unserem ersten Treffen herausholen können.",
+    "getInTouch": "Suchen Sie einen Backend- oder Fullstack-Entwickler?",
+    "description": "Ich bin offen für Rollen, in denen ich skalierbare Systeme und wirkungsvolle Produkte mitgestalten kann.",
+    "cta": "Lassen Sie uns sprechen.",
     "location": "Standort",
     "email": "E-Mail",
     "phone": "Telefon",
@@ -37,13 +43,13 @@
   "personal": {
     "name": "EL HANAFI",
     "fullName": "EL HANAFI YASSINE",
-    "title": "Softwareentwickler",
+    "title": "Softwareentwickler (Java / Angular)",
     "location": "Casablanca, Marokko",
     "email": "elhanafiyassine21@gmail.com",
     "phone": "+212 708 161 260"
   },
   "projects": {
-    "tools": "Werkzeuge",
+    "tools": "Tech-Stack",
     "cliffford": {
       "title": "Cliffford",
       "description": "Chatbot mit Handgesten-Steuerung unter Verwendung von Computer Vision und neuronalen Netzen. Enthält Echtzeit-Datensynchronisation und Benutzerauthentifizierung."

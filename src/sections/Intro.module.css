@@ -1,20 +1,162 @@
-.introContent {
-  padding: 2rem 0;
+/* Hero — full width of parent column (no extra max-width box) */
+.hero {
+  width: 100%;
+  padding: 2.5rem 0 1.5rem;
 }
 
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .heroGrid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.heroText {
+  min-width: 0;
+}
+
+/* Title — text-4xl → md:text-6xl, bold */
 .introTitle {
-  font-size: 3rem;
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   font-weight: 700;
-  color: #ccd6f6;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--foreground);
   margin-bottom: 1rem;
-  line-height: 1.2;
+}
+
+.introTitle :global(a),
+.introTitle :global(span.highlight) {
+  color: inherit;
+}
+
+/* Availability pill + primary accent dot */
+.availabilityBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3125rem 0.75rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: var(--foreground-secondary);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  box-shadow: var(--shadow-ring);
+}
+
+.availabilityDot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-muted);
+}
+
+/* Subtitle — muted foreground */
+.heroSubtitle {
+  font-size: clamp(1.125rem, 2.2vw, 1.375rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--foreground-muted);
+  margin: 0 0 1rem 0;
 }
 
 .introDescription {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #8892b0;
-  margin-bottom: 2rem;
+  font-size: 1.0625rem;
+  line-height: var(--leading-relaxed);
+  color: var(--foreground-secondary);
+  margin: 0 0 1.5rem 0;
+  max-width: 38rem;
+}
+
+.trustList {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  max-width: 36rem;
+}
+
+.trustItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--foreground-secondary);
+}
+
+.trustIcon {
+  flex-shrink: 0;
+  width: 0.875rem;
+  margin-top: 0.2rem;
+  color: var(--primary);
+  opacity: 0.95;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Secondary: outline */
+.heroSecondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.6875rem 1.375rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--foreground);
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-ring);
+  transition: background-color var(--transition-base), border-color var(--transition-base),
+    color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-fast);
+}
+
+.heroSecondaryBtn:hover {
+  background-color: var(--primary-muted);
+  border-color: var(--border-hover);
+  color: var(--foreground);
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Right column: photo only (same as original layout; hidden below lg) */
+.heroVisual {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .heroVisual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .introImageWrapper {
@@ -22,30 +164,44 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  width: 100%;
 }
 
 .introImage {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-slow), box-shadow var(--transition-base),
+    border-color var(--transition-base);
 }
 
 .introImage:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-lg);
 }
 
-@media (max-width: 768px) {
-  .introTitle {
-    font-size: 2rem;
+@media (max-width: 991px) {
+  .hero {
+    padding: 1.5rem 0 1rem;
   }
-  
+
+  .heroGrid {
+    gap: 2rem;
+  }
+
+  .introTitle {
+    font-size: clamp(2rem, 7vw, 2.75rem);
+  }
+
   .introDescription {
     font-size: 1rem;
+    margin-bottom: 1.25rem;
   }
-  
-  .introContent {
-    padding: 1rem 0;
+
+  .trustList {
+    margin-bottom: 1.75rem;
   }
-} 
+}

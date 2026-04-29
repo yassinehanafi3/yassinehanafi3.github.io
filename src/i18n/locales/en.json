@@ -7,18 +7,24 @@
     "contact": "contact"
   },
   "intro": {
-    "greeting": "Hi, <span style=\"color: #64ffda\">{{name}}</span> here.",
-    "title": "Software Engineer",
+    "greeting": "Hi, <span style=\"color: var(--primary)\">{{name}}</span> here.",
+    "title": "Software Engineer (Java / Angular)",
     "description": "Welcome! I'm EL HANAFI, a passionate software engineer based in Casablanca, Morocco. I specialize in building innovative and scalable digital solutions that solve real-world problems. Let's connect and bring your vision to life.",
-    "profileAlt": "{{fullName}} profile"
+    "profileAlt": "{{fullName}} profile",
+    "availability": "Available for opportunities",
+    "trust1": "Production-grade backend systems",
+    "trust2": "Microservices & distributed architecture",
+    "trust3": "Angular + Spring Boot",
+    "secondaryCta": "Get in touch"
   },
   "about": {
     "description": "Software Engineer with a passion for programming and problem-solving. Proficient in full-stack development with Spring and Angular, and experienced in delivering impactful solutions at leading companies. I thrive on crafting clean, efficient code and transforming complex ideas into real-world applications.",
     "interests": "Outside of work, I'm interested in following the developments of science. I also play a lot of video games. And watch series."
   },
   "contact": {
-    "getInTouch": "Let's Get in Touch",
-    "description": "I enjoy discussing new projects and design challenges. Please share as much info as possible so we can get the most out of our first catch-up.",
+    "getInTouch": "Looking for a backend or fullstack engineer?",
+    "description": "I'm open to opportunities where I can build scalable systems and impactful products.",
+    "cta": "Let's talk.",
     "location": "Location",
     "email": "Email",
     "phone": "Phone",
@@ -37,13 +43,13 @@
   "personal": {
     "name": "EL HANAFI",
     "fullName": "EL HANAFI YASSINE",
-    "title": "Software Engineer",
+    "title": "Software Engineer (Java / Angular)",
     "location": "Casablanca, Morocco",
     "email": "elhanafiyassine21@gmail.com",
     "phone": "+212 708 161 260"
   },
   "projects": {
-    "tools": "Tools",
+    "tools": "Tech Stack",
     "cliffford": {
       "title": "Cliffford",
       "description": "Chatbot with hand gesture control using computer vision and neural networks. Includes real-time data sync and user authentication."

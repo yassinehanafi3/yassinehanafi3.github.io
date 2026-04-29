@@ -1,6 +1,6 @@
 .aboutSection {
-  padding: 5rem 0;
-  background: #0a192f;
+  padding: 0;
+  background: transparent;
 }
 
 .aboutContainer {
@@ -12,28 +12,34 @@
 .aboutTitle {
   text-align: center;
   margin-bottom: 3rem;
-  color: #e6f1ff;
+  color: var(--foreground);
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .aboutContent {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.25rem;
 }
 
 .aboutDescription {
-  color: #a8b2d1;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  color: var(--foreground-secondary);
+  font-size: 1.0625rem;
+  line-height: var(--leading-relaxed);
   margin: 0;
+  max-width: 65ch;
+}
+
+.interestsSection {
+  margin-top: 0.25rem;
 }
 
 .interestsText {
-  color: #8892b0;
-  font-size: 1rem;
-  line-height: 1.6;
+  color: var(--foreground-muted);
+  font-size: 0.9375rem;
+  line-height: var(--leading-normal);
   margin: 0;
   font-style: italic;
 }
@@ -42,13 +48,12 @@
   margin-top: 1rem;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .aboutDescription {
     font-size: 1rem;
   }
-  
+
   .interestsText {
-    font-size: 0.95rem;
+    font-size: 0.875rem;
   }
-} 
+}
