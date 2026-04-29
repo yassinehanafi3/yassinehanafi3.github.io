@@ -7,19 +7,21 @@
 }
 
 .textSphere .tagcloud {
-  color: #64ffda;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .textSphere .tagcloud--item {
   padding: 2px 4px;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color var(--transition-base);
+  border-radius: var(--radius-sm);
 }
 
 .textSphere .tagcloud--item:hover {
-  color: #ccd6f6;
-} 
+  color: var(--foreground);
+}

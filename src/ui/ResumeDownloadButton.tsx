@@ -4,14 +4,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import styles from './ResumeDownloadButton.module.css';
 
-const ResumeDownloadButton: React.FC = () => {
+interface ResumeDownloadButtonProps {
+  className?: string;
+  size?: 'default' | 'hero';
+}
+
+const ResumeDownloadButton: React.FC<ResumeDownloadButtonProps> = ({ className, size = 'default' }) => {
   const { t } = useTranslation();
-  
+
   return (
-    <a 
-      href="/Resume_Yassine_EL_HANAFI_2025.pdf" 
+    <a
+      href="/Resume_Yassine_EL_HANAFI_2025.pdf"
       download="Resume_Yassine_EL_HANAFI_2025.pdf"
-      className={styles.resumeButton}
+      className={[styles.resumeButton, size === 'hero' && styles.resumeButtonHero, className]
+        .filter(Boolean)
+        .join(' ')}
     >
       <FontAwesomeIcon icon={faDownload} className={styles.downloadIcon} />
       {t('resume.download')}

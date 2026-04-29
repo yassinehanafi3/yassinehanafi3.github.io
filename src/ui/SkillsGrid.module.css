@@ -1,65 +1,79 @@
 .skillsContainer {
   width: 100%;
-  padding: 1rem 1rem 0 0rem;
+  padding: 0.25rem 1rem 0 0;
 }
 
 .skillsIntro {
-  color: #ccd6f6;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  color: var(--card-foreground);
+  font-size: 1.0625rem;
+  margin-bottom: 1.25rem;
   font-weight: 500;
+  line-height: var(--leading-normal);
 }
 
 .technologiesList {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.625rem;
 }
 
 .technologyItem {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.8rem 1.2rem;
-  background: rgba(100, 255, 218, 0.1);
-  border: 1px solid rgba(100, 255, 218, 0.2);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  animation: fadeInUp 0.5s ease-out var(--delay) both;
-  cursor: pointer;
+  padding: 0.5rem 0.875rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  transition: border-color var(--transition-base), background-color var(--transition-base),
+    box-shadow var(--transition-base), transform var(--transition-fast);
+  animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) var(--delay) both;
+  cursor: default;
+  box-shadow: var(--shadow-ring);
 }
 
 .technologyItem:hover {
-  background: rgba(100, 255, 218, 0.15);
-  border-color: rgba(100, 255, 218, 0.4);
+  border-color: var(--border-hover);
+  background-color: var(--card-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.2);
+  box-shadow: var(--shadow-sm);
 }
 
 .techIcon {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+}
+
+/* PNG logos → neutral greyscale to match the UI */
+.techIcon:is(img) {
+  filter: grayscale(1);
+  opacity: 0.88;
+  transition: filter var(--transition-base), opacity var(--transition-base);
+}
+
+.technologyItem:hover .techIcon:is(img) {
+  filter: grayscale(1) brightness(1.1) contrast(1.05);
+  opacity: 1;
 }
 
 .techIcon:not(img) {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   width: auto;
   height: auto;
 }
 
 .techName {
-  color: #64ffda;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  color: var(--foreground);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -67,54 +81,49 @@
   }
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .skillsIntro {
     font-size: 1rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
-  
+
   .technologiesList {
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
-  
+
   .technologyItem {
-    padding: 0.6rem 1rem;
+    padding: 0.45rem 0.75rem;
   }
-  
+
   .techIcon {
     width: 20px;
     height: 20px;
   }
-  
+
   .techIcon:not(img) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-  
+
   .techName {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 480px) {
   .technologiesList {
-    gap: 0.6rem;
+    gap: 0.45rem;
   }
-  
+
   .technologyItem {
-    padding: 0.5rem 0.8rem;
+    padding: 0.4rem 0.65rem;
   }
-  
+
   .techIcon {
     width: 18px;
     height: 18px;
   }
-  
-  .techIcon:not(img) {
-    font-size: 1.1rem;
-  }
-  
+
   .techName {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
-} 
+}

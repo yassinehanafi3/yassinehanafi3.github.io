@@ -7,18 +7,24 @@
     "contact": "contact"
   },
   "intro": {
-    "greeting": "Salut, <span style=\"color: #64ffda\">{{name}}</span> ici.",
-    "title": "Ingénieur Logiciel",
+    "greeting": "Salut, <span style=\"color: var(--primary)\">{{name}}</span> ici.",
+    "title": "Ingénieur logiciel (Java / Angular)",
     "description": "Bienvenue ! Je suis EL HANAFI, un ingénieur logiciel passionné basé à Casablanca, Maroc. Je me spécialise dans la création de solutions numériques innovantes et évolutives qui résolvent des problèmes réels. Connectons-nous et donnons vie à votre vision.",
-    "profileAlt": "profil {{fullName}}"
+    "profileAlt": "profil {{fullName}}",
+    "availability": "Disponible pour des opportunités",
+    "trust1": "Systèmes backend de niveau production",
+    "trust2": "Microservices & architecture distribuée",
+    "trust3": "Angular + Spring Boot",
+    "secondaryCta": "Me contacter"
   },
   "about": {
     "description": "Ingénieur logiciel passionné par la programmation et la résolution de problèmes. Compétent en développement full-stack avec Spring et Angular, et expérimenté dans la livraison de solutions impactantes dans des entreprises de premier plan. Je m'épanouis en créant du code propre et efficace et en transformant des idées complexes en applications concrètes.",
     "interests": "En dehors du travail, je m'intéresse aux développements scientifiques. Je joue aussi beaucoup aux jeux vidéo. Et je regarde des séries."
   },
   "contact": {
-    "getInTouch": "Contactons-nous",
-    "description": "J'aime discuter de nouveaux projets et de défis de conception. Partagez autant d'informations que possible pour que nous puissions tirer le meilleur parti de notre première rencontre.",
+    "getInTouch": "Vous cherchez un ingénieur backend ou full stack ?",
+    "description": "Je suis ouvert aux opportunités où je peux concevoir des systèmes évolutifs et des produits à fort impact.",
+    "cta": "Discutons.",
     "location": "Localisation",
     "email": "Email",
     "phone": "Téléphone",
@@ -37,13 +43,13 @@
   "personal": {
     "name": "EL HANAFI",
     "fullName": "EL HANAFI YASSINE",
-    "title": "Ingénieur Logiciel",
+    "title": "Ingénieur logiciel (Java / Angular)",
     "location": "Casablanca, Maroc",
     "email": "elhanafiyassine21@gmail.com",
     "phone": "+212 708 161 260"
   },
   "projects": {
-    "tools": "Outils",
+    "tools": "Stack technique",
     "cliffford": {
       "title": "Cliffford",
       "description": "Chatbot avec contrôle par gestes de la main utilisant la vision par ordinateur et les réseaux de neurones. Inclut la synchronisation de données en temps réel et l'authentification utilisateur."
@@ -80,13 +86,13 @@
   "experience": {
     "inetum": {
       "company": "Inetum",
-      "title": "Ingénieur Logiciel",
+      "title": "Ingénieur logiciel",
       "date": "JAN 2025 - PRÉSENT",
       "description": "Travaillé sur un système financier utilisé par les autorités locales en France. Construit et mis à jour des fonctionnalités, géré des données en temps réel et participé aux sprints d'équipe."
     },
     "orangeBusinessServices": {
       "company": "Orange Business Services",
-      "title": "Ingénieur Logiciel",
+      "title": "Ingénieur logiciel",
       "date1": "FÉV 2024 - AOÛT 2024",
       "description1": "Développé le backend et frontend pour un outil de validation de demandes. Mis en place des microservices avec découverte de service, équilibrage de charge et configuration externe.",
       "date2": "JUILLET 2023 - SEPT 2023",
@@ -94,13 +100,13 @@
     },
     "cegedim": {
       "company": "CEGEDIM",
-      "title": "Ingénieur Logiciel",
+      "title": "Ingénieur logiciel",
       "date": "JUILLET 2022 - SEPT 2022",
       "description": "Construit une application web en temps réel pour les sessions de planification d'équipe. Utilisé WebSockets pour les mises à jour en direct et géré la logique de vote et d'interaction."
     },
     "men": {
       "company": "Direction Provinciale de l'Éducation Nationale",
-      "title": "Ingénieur Logiciel",
+      "title": "Ingénieur logiciel",
       "date": "MARS 2021 - MAI 2021",
       "description": "Développé \"Tawajooh\", un système de gestion des candidatures d'étudiants qui a rationalisé les processus administratifs pour les étudiants."
     }

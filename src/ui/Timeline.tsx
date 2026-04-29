@@ -48,7 +48,13 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data, isActive }) => {
               </li>
             ))}
           </ul>
-          <p className={styles.timelineSkills}>{data.skills}</p>
+          <div className={styles.timelineSkills}>
+            {data.skills.split(' · ').map((skill) => (
+              <span key={skill} className={styles.skillBadge}>
+                {skill.trim()}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>

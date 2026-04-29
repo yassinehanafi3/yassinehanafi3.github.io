@@ -70,10 +70,10 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCES: Experience[] = [
   {
     id: "1",
-    abbreviation: "INETUM",
-    companyName: "Inetum",
-    title: "Software Engineer",
-    link: "https://www.linkedin.com/company/inetum/",
+    abbreviation: "NEXPUBLICA",
+    companyName: "Nexpublica",
+    title: "Full Stack Engineer",
+    link: "https://www.linkedin.com/company/nexpublica/",
     date: "JAN 2025 - PRESENT",
     description:
       "Worked on a financial system used by local authorities in France. Built and updated features, handled real-time data, and took part in team sprints.",
@@ -85,7 +85,7 @@ export const EXPERIENCES: Experience[] = [
     id: "2",
     abbreviation: "OBS",
     companyName: "Orange Business Services",
-    title: "Software Engineer",
+    title: "Full Stack Engineer",
     link: "https://www.linkedin.com/company/orange-business-services-maroc",
     date: "FEB 2024 - AUG 2024",
     description:
@@ -98,7 +98,7 @@ export const EXPERIENCES: Experience[] = [
     id: "3",
     abbreviation: "OBS",
     companyName: "Orange Business Services",
-    title: "Software Engineer",
+    title: "Full Stack Developer",
     link: "https://www.linkedin.com/company/orange-business-services-maroc",
     date: "JULY 2023 - SEPT 2023",
     description:
@@ -111,7 +111,7 @@ export const EXPERIENCES: Experience[] = [
     id: "4",
     abbreviation: "CEGEDIM",
     companyName: "CEGEDIM",
-    title: "Software Engineer",
+    title: "Full Stack Developer",
     link: "https://www.linkedin.com/company/cegedim/",
     date: "JULY 2022 - SEPT 2022",
     description:

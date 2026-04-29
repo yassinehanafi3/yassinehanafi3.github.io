@@ -87,9 +87,14 @@ const ProjectCard: React.FC<ProjectCardProps> = () => {
             
             <div className={styles.cardContent}>
               <p className={styles.projectDescription}>{project.description}</p>
-              <p className={styles.projectTools}>
-                <strong>{t('projects.tools')}: {project.tools}</strong>
-              </p>
+              <p className={styles.toolsLabel}>{t('projects.tools')}</p>
+              <div className={styles.toolBadges}>
+                {project.tools.split(' - ').map((tool) => (
+                  <span key={`${project.id}-${tool}`} className={styles.toolBadge}>
+                    {tool.trim()}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

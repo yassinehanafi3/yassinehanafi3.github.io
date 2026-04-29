@@ -29,10 +29,11 @@ const SkillsGrid: React.FC = () => {
             style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
           >
             {tech.hasAsset ? (
-              <img 
-                src={tech.icon} 
-                alt={tech.name} 
+              <img
+                src={tech.icon}
+                alt=""
                 className={styles.techIcon}
+                aria-hidden
               />
             ) : (
               <span className={styles.techIcon}>{tech.icon}</span>
