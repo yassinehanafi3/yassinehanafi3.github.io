@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import styles from './ProjectCard.module.css';
 
-export interface ProjectData {
+interface ProjectData {
   id: number;
   key: string;
   tools: string[];
@@ -12,10 +12,10 @@ export interface ProjectData {
   featured?: boolean;
 }
 
-export const PROJECTS: ProjectData[] = [
+const PROJECTS: ProjectData[] = [
   { id: 7, key: 'astreintEase', tools: ['Spring Cloud', 'Angular', 'Docker', 'MySQL'], github: 'https://github.com/AstreintEase', featured: true },
   { id: 8, key: 'orangeStaffing', tools: ['Spring Boot', 'Angular', 'MySQL'], github: 'https://github.com/Staffing-Orange', featured: true },
-  { id: 6, key: 'ensetCandidature', tools: ['Spring Boot', 'Angular', 'Docker'], github: 'https://github.com/ENSET-Candidature', featured: true },
+  { id: 6, key: 'ensetCandidature', tools: ['Spring Boot', 'Angular', 'Docker', 'MySQL'], github: 'https://github.com/ENSET-Candidature', featured: true },
   { id: 2, key: 'pokerPlanning', tools: ['Spring Boot', 'Angular', 'WebSocket'], github: 'https://github.com/yassinehanafi3/pokerplanning-backend' },
   { id: 1, key: 'cliffford', tools: ['Python', 'Flask', 'OpenCV'], github: 'https://github.com/yassinehanafi3/Cliffford' },
   { id: 3, key: 'tawajooh', tools: ['Flask', 'JavaScript', 'SQLite'], github: 'https://github.com/yassinehanafi3/Tawajooh' },
@@ -48,6 +48,9 @@ const ProjectCard: React.FC = () => {
                 </div>
                 <p className={styles.impact}>{t(`${base}.impact`)}</p>
                 <p className={styles.summary}>{t(`${base}.summary`)}</p>
+                {t(`${base}.role`, { defaultValue: '' }) && (
+                  <p className={styles.roleLine}>{t(`${base}.role`)}</p>
+                )}
                 <p className={styles.tools}>{project.tools.join(' · ')}</p>
               </div>
               <span className={styles.arrow} aria-hidden="true">

@@ -8,26 +8,26 @@
     "contact": "Contact"
   },
   "intro": {
-    "roleLabel": "Full Stack Software Engineer",
+    "roleLabel": "Backend & Full-Stack Developer",
     "headline": "Yassine EL HANAFI",
     "stackLine": "Java · Spring Boot · Angular",
-    "description": "Full Stack Software Engineer specialized in Java, Spring Boot, and Angular, with experience building financial and workflow-based applications in Agile environments. Comfortable across backend services, REST APIs, databases, and frontend integration, with a focus on clean code, maintainability, and production-ready delivery.",
+    "description": "I build enterprise and financial web applications with Java, Spring Boot, Angular, PostgreSQL, RabbitMQ, and REST APIs. Currently at Nexpublica.",
     "profileAlt": "Portrait of {{fullName}}",
-    "availability": "Open to international opportunities",
-    "trustLabel": "Core strengths",
-    "trust1": "End-to-end financial workflows for local government authorities",
-    "trust2": "Microservices with Spring Boot, Spring Cloud, RabbitMQ & OpenFeign",
-    "trust3": "Angular frontends with REST APIs and WebSockets/STOMP real-time features",
-    "contactCta": "Contact me"
+    "availability": "Based in Morocco. Open to international opportunities.",
+    "trustLabel": "Highlights",
+    "trust1": "Financial workflows for public-sector platforms",
+    "trust2": "Backend services with Spring Boot, PostgreSQL, RabbitMQ, OpenFeign",
+    "trust3": "Angular frontends integrated with REST APIs",
+    "contactCta": "Contact Me"
   },
   "about": {
     "heading": "About me",
-    "description": "Full Stack Software Engineer specialized in Java, Spring Boot, and Angular, with experience building financial and workflow-based applications in Agile environments. I work across backend services, REST APIs, databases, and frontend integration, with a focus on clean code, maintainability, and production-ready delivery."
+    "description": "Software Engineer at Nexpublica, working on financial management platforms for public-sector clients. I develop backend services with Java and Spring Boot, integrate Angular frontends with REST APIs, and contribute to debugging, validation, and documentation in Agile teams. Previous experience at Orange Business and Cegedim."
   },
   "contact": {
-    "heading": "Get in touch",
-    "getInTouch": "Let's connect",
-    "description": "Open to full-stack software engineering roles internationally. Download my CV or reach out directly.",
+    "heading": "Contact",
+    "getInTouch": "Open to Backend Java, Full Stack Java/Angular, and Software Engineer roles internationally.",
+    "description": "Download my CV, email me, or connect on LinkedIn.",
     "emailCta": "Send email",
     "linkedinCta": "LinkedIn",
     "githubCta": "GitHub",
@@ -37,75 +37,76 @@
     "relocation": "Open to international relocation"
   },
   "personal": {
-    "name": "EL HANAFI",
     "fullName": "Yassine EL HANAFI",
-    "title": "Full Stack Software Engineer | Java / Spring Boot / Angular",
     "location": "Casablanca, Morocco",
     "email": "elhanafiyassine21@gmail.com",
     "phone": "+212 7 08 16 12 60"
   },
   "projects": {
-    "heading": "Selected work",
-    "intro": "Production-oriented projects across microservices, full-stack delivery, and enterprise workflows.",
+    "heading": "Selected projects",
+    "intro": "Java, Spring Boot, and Angular projects from production work and internships.",
     "featured": "Featured",
-    "technologies": "Technologies",
     "viewCode": "View source code",
     "cliffford": {
       "title": "Cliffford",
-      "summary": "Gesture-controlled chatbot built with OpenCV, CNN/LSTM models, and Firebase authentication.",
-      "impact": "End-to-end ML pipeline with a responsive web interface."
+      "summary": "Gesture-controlled chatbot with OpenCV, CNN/LSTM models, and Firebase authentication.",
+      "impact": "Accessible interaction prototype for gesture-based chat."
     },
     "pokerPlanning": {
       "title": "Poker Planning",
       "summary": "Real-time agile estimation tool with Spring Boot WebSockets and an Angular client.",
-      "impact": "Live vote aggregation for distributed planning sessions."
+      "impact": "Live sprint estimation for distributed Agile teams."
     },
     "tawajooh": {
       "title": "Tawajooh",
       "summary": "Student application portal with form workflows, document tracking, and status dashboards.",
-      "impact": "Streamlined orientation processing for a provincial education authority."
+      "impact": "Digitized orientation requests for a provincial education authority."
     },
     "hospitalManagement": {
       "title": "Hospital Management",
-      "summary": "JavaFX desktop app for scheduling and patient records with MongoDB and Redis caching.",
-      "impact": "Unified clinic scheduling and records in one application."
+      "summary": "JavaFX desktop app for clinic scheduling and patient records with MongoDB and Redis.",
+      "impact": "One tool for clinic scheduling and patient records."
     },
     "blogger": {
       "title": "Blogger",
       "summary": "Blogging platform with Express.js, Prisma ORM, and role-based access control.",
-      "impact": "Full CRUD publishing workflow with user accounts and comments."
+      "impact": "Content publishing with accounts, posts, and comments."
     },
     "ensetCandidature": {
       "title": "ENSET Candidature",
       "summary": "Microservices admissions platform with Spring Boot, Angular, Docker, and MySQL.",
-      "impact": "Automated scoring and evaluation for engineering school admissions."
+      "role": "Tech lead, Scrum Master, and developer on a team of 5.",
+      "impact": "Automated admissions scoring and evaluation for an engineering school."
     },
     "astreintEase": {
       "title": "AstreintEase",
       "summary": "On-call management system with Spring Cloud microservices and approval workflows.",
-      "impact": "Reduced manual coordination for team duty scheduling."
+      "role": "Tech lead and developer. Orange Business internship.",
+      "impact": "Replaced manual on-call coordination for Orange Business teams."
     },
     "orangeStaffing": {
       "title": "Orange Staffing",
-      "summary": "Internal recruitment platform from job posting to interview scheduling.",
-      "impact": "Consolidated hiring pipeline for Orange Business HR teams."
+      "summary": "Internal recruitment platform with Spring Boot and Angular.",
+      "role": "Tech lead and developer on a team of 3. Orange Business internship.",
+      "impact": "Single hiring workflow for Orange Business HR from posting to interviews."
     }
   },
   "experience": {
     "heading": "Work experience",
-    "intro": "Enterprise roles with clear scope, technologies, and measurable outcomes.",
+    "intro": "Financial platforms, telecom systems, and HR applications delivered with Java and Spring Boot.",
     "current": "Current",
     "skillsLabel": "Technologies",
     "nexpublica": {
       "company": "Nexpublica (ex. Inetum Software)",
-      "title": "Full Stack Engineer",
+      "title": "Software Engineer",
       "location": "Casablanca, Morocco",
       "date": "Jan 2025 – Present",
       "dateIso": "2025-01",
       "bullets": [
-        "Worked on end-to-end financial workflow features for a platform used by local government authorities, including invoice creation, validation, liquidation, status transitions, payment deadlines, and budget-related business rules",
-        "Built and integrated backend services using RabbitMQ and OpenFeign for reliable inter-service communication and consistent business rule execution",
-        "Investigated and resolved functional and technical issues across frontend, backend, database, and workflow layers in Agile/SCRUM delivery"
+        "Developed and maintained features for a financial management platform used by public-sector organizations.",
+        "Implemented backend business workflows using Java, Spring Boot, PostgreSQL, RabbitMQ, and OpenFeign.",
+        "Integrated Angular interfaces with REST APIs and contributed to debugging, validation, and technical documentation.",
+        "Worked in Agile/SCRUM delivery with GitLab."
       ]
     },
     "orange1": {
@@ -115,8 +116,9 @@
       "date": "Feb 2024 – Aug 2024",
       "dateIso": "2024-02/2024-08",
       "bullets": [
-        "Designed and developed an on-call request management application based on a microservices architecture, covering request creation, validation workflows, and status tracking",
-        "Implemented backend services using Spring Boot and Spring Cloud, including service discovery, inter-service communication, and centralized configuration"
+        "Built an on-call request management application with Spring Boot, Spring Cloud, and Angular.",
+        "Covered request creation, validation workflows, and status tracking across microservices.",
+        "Delivered REST APIs and Angular interfaces for operational teams."
       ]
     },
     "orange2": {
@@ -126,7 +128,8 @@
       "date": "Jul 2023 – Sep 2023",
       "dateIso": "2023-07/2023-09",
       "bullets": [
-        "Designed and developed an internal recruitment management application to automate candidate tracking, user management, and recruitment workflow follow-up"
+        "Built an internal recruitment application for candidate tracking and hiring workflow follow-up.",
+        "Developed Spring Boot REST APIs and Angular screens used by Orange Business HR teams."
       ]
     },
     "cegedim": {
@@ -136,8 +139,8 @@
       "date": "Jul 2022 – Sep 2022",
       "dateIso": "2022-07/2022-09",
       "bullets": [
-        "Developed a Poker Planning application to support Agile/SCRUM estimation sessions and improve team collaboration during sprint planning",
-        "Implemented real-time communication using WebSockets/STOMP, enabling synchronized participation and live updates between users"
+        "Developed a Poker Planning application for Agile estimation sessions with Spring Boot and Angular.",
+        "Implemented real-time updates with WebSockets/STOMP for synchronized team planning."
       ]
     }
   },
@@ -155,7 +158,8 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "database": "Database",
-      "devops": "DevOps & Tools"
+      "devops": "DevOps & Tools",
+      "practices": "Practices"
     }
   },
   "footer": {

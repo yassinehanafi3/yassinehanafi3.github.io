@@ -5,19 +5,23 @@ import styles from './SkillsGrid.module.css';
 const SKILL_GROUPS = [
   {
     category: 'backend' as const,
-    skills: ['Java', 'Spring Boot', 'Spring Cloud', 'REST APIs', 'OpenFeign', 'RabbitMQ', 'WebSockets/STOMP'],
+    skills: ['Java', 'Spring Boot', 'REST APIs', 'OpenFeign', 'RabbitMQ'],
   },
   {
     category: 'frontend' as const,
-    skills: ['Angular', 'TypeScript', 'JavaScript', 'React', 'Next.js', 'Bootstrap'],
+    skills: ['Angular', 'TypeScript', 'HTML', 'CSS/SCSS'],
   },
   {
     category: 'database' as const,
-    skills: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB', 'Redis', 'Firebase'],
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL'],
   },
   {
     category: 'devops' as const,
-    skills: ['GitLab CI/CD', 'Jenkins', 'Docker', 'Nginx', 'Git', 'Agile', 'SCRUM'],
+    skills: ['GitLab', 'Docker', 'Nginx', 'Lua'],
+  },
+  {
+    category: 'practices' as const,
+    skills: ['Agile/SCRUM', 'API integration', 'Debugging', 'Documentation'],
   },
 ];
 
@@ -29,7 +33,11 @@ const SkillsGrid: React.FC = () => {
       {SKILL_GROUPS.map((group) => (
         <div key={group.category} className={styles.group}>
           <h4 className={styles.label}>{t(`skills.categories.${group.category}`)}</h4>
-          <p className={styles.skills}>{group.skills.join(', ')}</p>
+          <ul className={styles.skills}>
+            {group.skills.map((skill) => (
+              <li key={skill}>{skill}</li>
+            ))}
+          </ul>
         </div>
       ))}
     </div>

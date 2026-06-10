@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
       <p className="sectionIntro">{t('contact.description')}</p>
 
       <div className={styles.layout}>
-        <div className={styles.ctaBlock}>
+        <div>
           <p className={styles.ctaText}>{t('contact.getInTouch')}</p>
           <div className={styles.buttons}>
             <ResumeDownloadButton />

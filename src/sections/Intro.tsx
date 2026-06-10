@@ -11,7 +11,7 @@ const Intro: React.FC = () => {
     <div id="intro" className="container">
       <p className="sectionLabel">/intro</p>
       <div className={styles.hero}>
-        <div className={styles.heroContent}>
+        <div>
           <p className={styles.role}>{t('intro.roleLabel')}</p>
 
           <h1 id="intro-heading" className={styles.name}>
@@ -26,7 +26,7 @@ const Intro: React.FC = () => {
 
           <div className={styles.actions}>
             <ResumeDownloadButton />
-            <a href="#contact" className="btn-secondary">
+            <a href="#contact" className="btn-link">
               {t('intro.contactCta')}
             </a>
           </div>
