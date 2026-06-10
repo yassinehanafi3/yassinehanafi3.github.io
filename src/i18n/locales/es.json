@@ -1,0 +1,174 @@
+{
+  "navigation": {
+    "main": "Navegación principal",
+    "intro": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "intro": {
+    "roleLabel": "Ingeniero Full Stack",
+    "headline": "Yassine EL HANAFI",
+    "stackLine": "Java · Spring Boot · Angular",
+    "description": "Ingeniero Full Stack especializado en Java, Spring Boot y Angular, con experiencia en el desarrollo de aplicaciones financieras y basadas en workflows en entornos Agile. Cómodo trabajando en servicios backend, APIs REST, bases de datos e integración frontend, con enfoque en código limpio, mantenibilidad y entrega lista para producción.",
+    "profileAlt": "Retrato de {{fullName}}",
+    "availability": "Abierto a oportunidades internacionales",
+    "trustLabel": "Fortalezas clave",
+    "trust1": "Workflows financieros de extremo a extremo para administraciones locales",
+    "trust2": "Microservicios con Spring Boot, Spring Cloud, RabbitMQ y OpenFeign",
+    "trust3": "Frontends Angular con APIs REST y funciones en tiempo real WebSockets/STOMP",
+    "contactCta": "Contactar",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "linkedinAria": "Ver perfil de LinkedIn",
+    "githubAria": "Ver perfil de GitHub"
+  },
+  "about": {
+    "heading": "Sobre mí",
+    "description": "Ingeniero Full Stack especializado en Java, Spring Boot y Angular, con experiencia en el desarrollo de aplicaciones financieras y basadas en workflows en entornos Agile. Trabajo en servicios backend, APIs REST, bases de datos e integración frontend, con enfoque en código limpio, mantenibilidad y entrega lista para producción. Actualmente en Nexpublica en Casablanca; anteriormente en Orange Business y Cegedim en Rabat."
+  },
+  "contact": {
+    "heading": "Contacto",
+    "getInTouch": "Conectemos",
+    "description": "Abierto a roles de ingeniería full stack a nivel internacional. Descarga mi CV o contáctame directamente.",
+    "emailCta": "Enviar email",
+    "linkedinCta": "LinkedIn",
+    "githubCta": "GitHub",
+    "location": "Ubicación",
+    "email": "Email",
+    "phone": "Teléfono",
+    "detailsLabel": "Datos de contacto",
+    "relocation": "Abierto a reubicación internacional"
+  },
+  "personal": {
+    "name": "EL HANAFI",
+    "fullName": "Yassine EL HANAFI",
+    "title": "Ingeniero Full Stack | Java / Spring Boot / Angular",
+    "location": "Casablanca, Marruecos",
+    "email": "elhanafiyassine21@gmail.com",
+    "phone": "+212 7 08 16 12 60"
+  },
+  "projects": {
+    "heading": "Trabajos seleccionados",
+    "intro": "Proyectos orientados a producción: microservicios, full stack y workflows empresariales.",
+    "featured": "Destacado",
+    "technologies": "Tecnologías",
+    "viewCode": "Ver código fuente",
+    "cliffford": {
+      "title": "Cliffford",
+      "summary": "Chatbot controlado por gestos con OpenCV, modelos CNN/LSTM y autenticación Firebase.",
+      "impact": "Pipeline ML de extremo a extremo con interfaz web responsive."
+    },
+    "pokerPlanning": {
+      "title": "Poker Planning",
+      "summary": "Herramienta de estimación ágil en tiempo real con WebSockets Spring Boot y cliente Angular.",
+      "impact": "Agregación de votos en vivo para sesiones de planning distribuidas."
+    },
+    "tawajooh": {
+      "title": "Tawajooh",
+      "summary": "Portal de solicitudes estudiantiles con workflows, seguimiento documental y dashboards de estado.",
+      "impact": "Procesamiento de orientación simplificado para una autoridad educativa provincial."
+    },
+    "hospitalManagement": {
+      "title": "Hospital Management",
+      "summary": "App de escritorio JavaFX para planificación y registros de pacientes con MongoDB y caché Redis.",
+      "impact": "Planificación clínica y registros unificados en una sola aplicación."
+    },
+    "blogger": {
+      "title": "Blogger",
+      "summary": "Plataforma de blogging con Express.js, Prisma ORM y control de acceso por roles.",
+      "impact": "Workflow de publicación completo con cuentas de usuario y comentarios."
+    },
+    "ensetCandidature": {
+      "title": "ENSET Candidature",
+      "summary": "Plataforma de admisiones con microservicios Spring Boot, Angular, Docker y MySQL.",
+      "impact": "Puntuación y evaluación automatizadas para admisiones de escuela de ingeniería."
+    },
+    "astreintEase": {
+      "title": "AstreintEase",
+      "summary": "Sistema de gestión de guardias con microservicios Spring Cloud y workflows de aprobación.",
+      "impact": "Menos coordinación manual para la planificación de guardias del equipo."
+    },
+    "orangeStaffing": {
+      "title": "Orange Staffing",
+      "summary": "Plataforma de reclutamiento interno desde la publicación de ofertas hasta la planificación de entrevistas.",
+      "impact": "Pipeline de contratación consolidado para los equipos de RRHH de Orange Business."
+    }
+  },
+  "experience": {
+    "heading": "Experiencia profesional",
+    "intro": "Roles empresariales con alcance, tecnologías y resultados claros.",
+    "current": "Actual",
+    "skillsLabel": "Tecnologías",
+    "nexpublica": {
+      "company": "Nexpublica (ex. Inetum Software)",
+      "title": "Ingeniero Full Stack",
+      "location": "Casablanca, Marruecos",
+      "date": "Ene 2025 – Presente",
+      "dateIso": "2025-01",
+      "bullets": [
+        "Trabajo en funcionalidades de workflow financiero de extremo a extremo para una plataforma usada por administraciones locales, incluyendo creación de facturas, validación, liquidación, transiciones de estado, plazos de pago y reglas de negocio presupuestarias",
+        "Construcción e integración de servicios backend con RabbitMQ y OpenFeign para comunicación fiable entre servicios y ejecución coherente de reglas de negocio",
+        "Investigación y resolución de problemas funcionales y técnicos en frontend, backend, base de datos y capas de workflow en entrega Agile/SCRUM"
+      ]
+    },
+    "orange1": {
+      "company": "Orange Business",
+      "title": "Prácticas Ingeniero Full Stack",
+      "location": "Rabat, Marruecos",
+      "date": "Feb 2024 – Ago 2024",
+      "dateIso": "2024-02/2024-08",
+      "bullets": [
+        "Diseño y desarrollo de una aplicación de gestión de solicitudes de guardia basada en arquitectura de microservicios, cubriendo creación de solicitudes, workflows de validación y seguimiento de estado",
+        "Implementación de servicios backend con Spring Boot y Spring Cloud, incluyendo service discovery, comunicación entre servicios y configuración centralizada"
+      ]
+    },
+    "orange2": {
+      "company": "Orange Business",
+      "title": "Prácticas Desarrollador Full Stack",
+      "location": "Rabat, Marruecos",
+      "date": "Jul 2023 – Sep 2023",
+      "dateIso": "2023-07/2023-09",
+      "bullets": [
+        "Diseño y desarrollo de una aplicación interna de gestión de reclutamiento para automatizar el seguimiento de candidatos, la gestión de usuarios y el seguimiento de workflows de contratación"
+      ]
+    },
+    "cegedim": {
+      "company": "Cegedim",
+      "title": "Prácticas Desarrollador Full Stack",
+      "location": "Rabat, Marruecos",
+      "date": "Jul 2022 – Sep 2022",
+      "dateIso": "2022-07/2022-09",
+      "bullets": [
+        "Desarrollo de una aplicación Poker Planning para sesiones de estimación Agile/SCRUM y mejor colaboración en equipo durante el sprint planning",
+        "Implementación de comunicación en tiempo real con WebSockets/STOMP, permitiendo participación sincronizada y actualizaciones en vivo"
+      ]
+    }
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "select": "Seleccionar idioma",
+    "short": "Idioma"
+  },
+  "resume": {
+    "download": "Descargar CV"
+  },
+  "skills": {
+    "intro": "Tecnologías que uso en producción y proyectos personales, agrupadas por dominio:",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Base de datos",
+      "devops": "DevOps y herramientas"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "social": "Redes sociales"
+  }
+}

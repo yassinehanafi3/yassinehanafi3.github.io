@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import { SideBar, Footer } from './layout';
 import { Intro, About, Experience, Projects, Contact } from './sections';
-import { LanguageSwitcher } from './ui';
 import { initializeTagManager } from './utils/gtm';
 import './i18n';
 import './styles/globals.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -14,43 +12,39 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <LanguageSwitcher />
-      <div className="container-fluid row">
-        <div className="offset-md-2 col-md-8">
-          <section className="section-wrapper">
+      <a href="#main" className="skipLink">
+        Skip to main content
+      </a>
+
+      <SideBar />
+
+      <div className="pageShell">
+        <main id="main" className="mainContent">
+          <section className="section-wrapper" aria-labelledby="intro-heading">
             <Intro />
           </section>
-          
-          <section className="section-wrapper">
+
+          <section className="section-wrapper" aria-labelledby="about-heading">
             <About />
           </section>
 
-          <section className="section-wrapper">
+          <section className="section-wrapper" aria-labelledby="experience-heading">
             <Experience />
           </section>
-          
-          <section className="section-wrapper">
+
+          <section className="section-wrapper" aria-labelledby="projects-heading">
             <Projects />
           </section>
-          
-          <section className="section-wrapper">
+
+          <section className="section-wrapper" aria-labelledby="contact-heading">
             <Contact />
           </section>
-        </div>
-        
-        <div className="d-none d-lg-block col-md-2">
-          <SideBar
-            intro="intro"
-            about="about"
-            experience="experience"
-            projects="projects"
-            contact="contact"
-          />
-        </div>
+        </main>
+
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
 
-export default App; 
+export default App;

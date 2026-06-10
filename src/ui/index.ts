@@ -3,4 +3,5 @@ export { TextSphere } from './TextSphere';
 export { Timeline } from './Timeline';
 export { SkillsGrid } from './SkillsGrid';
 export { default as ResumeDownloadButton } from './ResumeDownloadButton';
-export { LanguageSwitcher } from './LanguageSwitcher'; 
+export { LanguageSwitcher } from './LanguageSwitcher';
+export { PortraitFrame } from './PortraitFrame';

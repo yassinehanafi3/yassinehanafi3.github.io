@@ -2,8 +2,12 @@ export interface Project {
   id: number;
   title: string;
   description: string;
+  problem?: string;
+  solution?: string;
+  impact?: string;
   tools: string;
   github: string;
+  featured?: boolean;
   live?: string;
   image?: string;
 }

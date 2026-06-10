@@ -1,106 +1,64 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import styles from './ProjectCard.module.css';
 
-interface ProjectCardProps {}
+export interface ProjectData {
+  id: number;
+  key: string;
+  tools: string[];
+  github: string;
+  featured?: boolean;
+}
 
-const ProjectCard: React.FC<ProjectCardProps> = () => {
+export const PROJECTS: ProjectData[] = [
+  { id: 7, key: 'astreintEase', tools: ['Spring Cloud', 'Angular', 'Docker', 'MySQL'], github: 'https://github.com/AstreintEase', featured: true },
+  { id: 8, key: 'orangeStaffing', tools: ['Spring Boot', 'Angular', 'MySQL'], github: 'https://github.com/Staffing-Orange', featured: true },
+  { id: 6, key: 'ensetCandidature', tools: ['Spring Boot', 'Angular', 'Docker'], github: 'https://github.com/ENSET-Candidature', featured: true },
+  { id: 2, key: 'pokerPlanning', tools: ['Spring Boot', 'Angular', 'WebSocket'], github: 'https://github.com/yassinehanafi3/pokerplanning-backend' },
+  { id: 1, key: 'cliffford', tools: ['Python', 'Flask', 'OpenCV'], github: 'https://github.com/yassinehanafi3/Cliffford' },
+  { id: 3, key: 'tawajooh', tools: ['Flask', 'JavaScript', 'SQLite'], github: 'https://github.com/yassinehanafi3/Tawajooh' },
+  { id: 4, key: 'hospitalManagement', tools: ['JavaFX', 'MongoDB', 'Redis'], github: 'https://github.com/yassinehanafi3/Gestion_Hopital_ENSET' },
+  { id: 5, key: 'blogger', tools: ['Express.js', 'Prisma', 'MySQL'], github: 'https://github.com/yassinehanafi3/blogger' },
+];
+
+const ProjectCard: React.FC = () => {
   const { t } = useTranslation();
 
-  // Create projects data from translations
-  const projects = [
-    {
-      id: 1,
-      title: t('projects.cliffford.title'),
-      description: t('projects.cliffford.description'),
-      tools: "Flask - CNN - LSTM - Firebase - Python - OpenCV",
-      github: "https://github.com/yassinehanafi3/Cliffford",
-    },
-    {
-      id: 2,
-      title: t('projects.pokerPlanning.title'),
-      description: t('projects.pokerPlanning.description'),
-      tools: "Spring Boot - Angular - MySQL - WebSocket - REST API",
-      github: "https://github.com/yassinehanafi3/pokerplanning-backend",
-    },
-    {
-      id: 3,
-      title: t('projects.tawajooh.title'),
-      description: t('projects.tawajooh.description'),
-      tools: "Flask - HTML/CSS - JavaScript - Bootstrap - SQLite",
-      github: "https://github.com/yassinehanafi3/Tawajooh",
-    },
-    {
-      id: 4,
-      title: t('projects.hospitalManagement.title'),
-      description: t('projects.hospitalManagement.description'),
-      tools: "JavaFX - MongoDB - Redis - Java - Scene Builder",
-      github: "https://github.com/yassinehanafi3/Gestion_Hopital_ENSET",
-    },
-    {
-      id: 5,
-      title: t('projects.blogger.title'),
-      description: t('projects.blogger.description'),
-      tools: "Express.js - Prisma ORM - MySQL - REST API",
-      github: "https://github.com/yassinehanafi3/blogger",
-    },
-    {
-      id: 6,
-      title: t('projects.ensetCandidature.title'),
-      description: t('projects.ensetCandidature.description'),
-      tools: "Spring Boot - Angular - MySQL - Microservices - Docker",
-      github: "https://github.com/ENSET-Candidature",
-    },
-    {
-      id: 7,
-      title: t('projects.astreintEase.title'),
-      description: t('projects.astreintEase.description'),
-      tools: "Spring Cloud - Angular - Microservices - MySQL - Docker",
-      github: "https://github.com/AstreintEase",
-    },
-    {
-      id: 8,
-      title: t('projects.orangeStaffing.title'),
-      description: t('projects.orangeStaffing.description'),
-      tools: "Spring Boot - Angular - MySQL - REST API",
-      github: "https://github.com/Staffing-Orange",
-    },
-  ];
   return (
-    <>
-      {projects.map((project) => (
-        <div key={project.id} className={styles.projectCard}>
-          <div className={styles.card}>
-            <div className={styles.cardHeader}>
-              <h5 className={styles.cardTitle}>{project.title}</h5>
-              <a 
-                href={project.github} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className={styles.githubLink}
-              >
-                <FontAwesomeIcon icon={faGithub} className={styles.githubIcon} />
-              </a>
-            </div>
-            
-            <div className={styles.cardContent}>
-              <p className={styles.projectDescription}>{project.description}</p>
-              <p className={styles.toolsLabel}>{t('projects.tools')}</p>
-              <div className={styles.toolBadges}>
-                {project.tools.split(' - ').map((tool) => (
-                  <span key={`${project.id}-${tool}`} className={styles.toolBadge}>
-                    {tool.trim()}
-                  </span>
-                ))}
+    <ul className={styles.list}>
+      {PROJECTS.map((project) => {
+        const base = `projects.${project.key}`;
+        return (
+          <li key={project.id}>
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.row}
+              aria-label={`${t('projects.viewCode')}: ${t(`${base}.title`)}`}
+            >
+              <div className={styles.main}>
+                <div className={styles.titleRow}>
+                  <h3 className={styles.title}>{t(`${base}.title`)}</h3>
+                  {project.featured && (
+                    <span className={styles.tag}>{t('projects.featured')}</span>
+                  )}
+                </div>
+                <p className={styles.impact}>{t(`${base}.impact`)}</p>
+                <p className={styles.summary}>{t(`${base}.summary`)}</p>
+                <p className={styles.tools}>{project.tools.join(' · ')}</p>
               </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </>
+              <span className={styles.arrow} aria-hidden="true">
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 
-export { ProjectCard }; 
+export { ProjectCard };

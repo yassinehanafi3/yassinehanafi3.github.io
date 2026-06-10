@@ -2,48 +2,38 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './SkillsGrid.module.css';
 
-// Import technology icons
-import pythonIcon from '../assets/icons/python.png';
-import springBootIcon from '../assets/icons/spring-boot.png';
-import javaIcon from '../assets/icons/java.png';
-import angularIcon from '../assets/icons/angular.png';
+const SKILL_GROUPS = [
+  {
+    category: 'backend' as const,
+    skills: ['Java', 'Spring Boot', 'Spring Cloud', 'REST APIs', 'OpenFeign', 'RabbitMQ', 'WebSockets/STOMP'],
+  },
+  {
+    category: 'frontend' as const,
+    skills: ['Angular', 'TypeScript', 'JavaScript', 'React', 'Next.js', 'Bootstrap'],
+  },
+  {
+    category: 'database' as const,
+    skills: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB', 'Redis', 'Firebase'],
+  },
+  {
+    category: 'devops' as const,
+    skills: ['GitLab CI/CD', 'Jenkins', 'Docker', 'Nginx', 'Git', 'Agile', 'SCRUM'],
+  },
+];
 
 const SkillsGrid: React.FC = () => {
   const { t } = useTranslation();
-  
-  const technologies = [
-    { name: 'Java', icon: javaIcon, hasAsset: true },
-    { name: 'Spring Boot', icon: springBootIcon, hasAsset: true },
-    { name: 'Angular', icon: angularIcon, hasAsset: true },
-    { name: 'Python', icon: pythonIcon, hasAsset: true }
-  ];
 
   return (
-    <div className={styles.skillsContainer}>
-      <p className={styles.skillsIntro}>{t('skills.intro')}</p>
-      <div className={styles.technologiesList}>
-        {technologies.map((tech, index) => (
-          <div
-            key={tech.name}
-            className={styles.technologyItem}
-            style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
-          >
-            {tech.hasAsset ? (
-              <img
-                src={tech.icon}
-                alt=""
-                className={styles.techIcon}
-                aria-hidden
-              />
-            ) : (
-              <span className={styles.techIcon}>{tech.icon}</span>
-            )}
-            <span className={styles.techName}>{tech.name}</span>
-          </div>
-        ))}
-      </div>
+    <div className={styles.grid}>
+      {SKILL_GROUPS.map((group) => (
+        <div key={group.category} className={styles.group}>
+          <h4 className={styles.label}>{t(`skills.categories.${group.category}`)}</h4>
+          <p className={styles.skills}>{group.skills.join(', ')}</p>
+        </div>
+      ))}
     </div>
   );
 };
 
-export { SkillsGrid }; 
+export { SkillsGrid };
