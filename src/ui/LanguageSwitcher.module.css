@@ -53,11 +53,6 @@
   color: var(--accent);
 }
 
-/* Inline variant — same control, no hint label */
-.inlineWrap {
-  display: inline-flex;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .indicator {
     transition: none;

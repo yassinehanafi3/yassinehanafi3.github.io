@@ -40,7 +40,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Pull framing toward the face — slightly above center */
   object-position: center 18%;
   transform: scale(1.22);
   transform-origin: center 22%;

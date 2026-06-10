@@ -27,20 +27,3 @@ declare module '*.svg' {
   const src: string;
   export default src;
 }
-
-declare module 'TagCloud' {
-  interface TagCloudOptions {
-    radius?: number;
-    maxSpeed?: 'slow' | 'normal' | 'fast';
-    initSpeed?: 'slow' | 'normal' | 'fast';
-    keep?: boolean;
-  }
-
-  function TagCloud(
-    container: string,
-    texts: string[],
-    options?: TagCloudOptions
-  ): void;
-
-  export default TagCloud;
-} 

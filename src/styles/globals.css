@@ -1,4 +1,3 @@
-/* Editorial Craft — warm, human, recruiter-ready */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap');
 
 :root {
@@ -103,7 +102,6 @@ body {
 
 @media (min-width: 1101px) {
   .pageShell {
-    /* Mirror the right rail so content sits in the true center */
     padding-left: var(--rail-space);
     padding-right: var(--rail-space);
   }
@@ -139,7 +137,7 @@ body {
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: var(--foreground-muted);
+  color: var(--accent);
   margin-bottom: 0.75rem;
 }
 
