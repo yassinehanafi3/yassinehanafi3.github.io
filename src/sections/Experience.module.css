@@ -1,9 +1,11 @@
-.experienceContent {
-  padding: 0 0 1rem;
+.experienceIntro {
+  color: var(--foreground-secondary);
+  font-size: 1rem;
+  line-height: var(--leading-relaxed);
+  margin: -0.5rem 0 2rem 0;
+  max-width: 60ch;
 }
 
-@media (max-width: 768px) {
-  .experienceContent {
-    padding: 1.5rem 0 0.5rem;
-  }
+.experienceContent {
+  padding: 0;
 }

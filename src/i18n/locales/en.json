@@ -1,125 +1,174 @@
 {
   "navigation": {
-    "intro": "intro",
-    "about": "about",
-    "experience": "experience",
-    "projects": "projects",
-    "contact": "contact"
+    "main": "Main navigation",
+    "intro": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "intro": {
-    "greeting": "Hi, <span style=\"color: var(--primary)\">{{name}}</span> here.",
-    "title": "Software Engineer (Java / Angular)",
-    "description": "Welcome! I'm EL HANAFI, a passionate software engineer based in Casablanca, Morocco. I specialize in building innovative and scalable digital solutions that solve real-world problems. Let's connect and bring your vision to life.",
-    "profileAlt": "{{fullName}} profile",
-    "availability": "Available for opportunities",
-    "trust1": "Production-grade backend systems",
-    "trust2": "Microservices & distributed architecture",
-    "trust3": "Angular + Spring Boot",
-    "secondaryCta": "Get in touch"
+    "roleLabel": "Full Stack Software Engineer",
+    "headline": "Yassine EL HANAFI",
+    "stackLine": "Java · Spring Boot · Angular",
+    "description": "Full Stack Software Engineer specialized in Java, Spring Boot, and Angular, with experience building financial and workflow-based applications in Agile environments. Comfortable across backend services, REST APIs, databases, and frontend integration, with a focus on clean code, maintainability, and production-ready delivery.",
+    "profileAlt": "Portrait of {{fullName}}",
+    "availability": "Open to international opportunities",
+    "trustLabel": "Core strengths",
+    "trust1": "End-to-end financial workflows for local government authorities",
+    "trust2": "Microservices with Spring Boot, Spring Cloud, RabbitMQ & OpenFeign",
+    "trust3": "Angular frontends with REST APIs and WebSockets/STOMP real-time features",
+    "contactCta": "Contact me",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "linkedinAria": "View LinkedIn profile",
+    "githubAria": "View GitHub profile"
   },
   "about": {
-    "description": "Software Engineer with a passion for programming and problem-solving. Proficient in full-stack development with Spring and Angular, and experienced in delivering impactful solutions at leading companies. I thrive on crafting clean, efficient code and transforming complex ideas into real-world applications.",
-    "interests": "Outside of work, I'm interested in following the developments of science. I also play a lot of video games. And watch series."
+    "heading": "About me",
+    "description": "Full Stack Software Engineer specialized in Java, Spring Boot, and Angular, with experience building financial and workflow-based applications in Agile environments. I work across backend services, REST APIs, databases, and frontend integration, with a focus on clean code, maintainability, and production-ready delivery."
   },
   "contact": {
-    "getInTouch": "Looking for a backend or fullstack engineer?",
-    "description": "I'm open to opportunities where I can build scalable systems and impactful products.",
-    "cta": "Let's talk.",
+    "heading": "Get in touch",
+    "getInTouch": "Let's connect",
+    "description": "Open to full-stack software engineering roles internationally. Download my CV or reach out directly.",
+    "emailCta": "Send email",
+    "linkedinCta": "LinkedIn",
+    "githubCta": "GitHub",
     "location": "Location",
     "email": "Email",
     "phone": "Phone",
-    "form": {
-      "subject": "Subject",
-      "message": "Message",
-      "sendMessage": "Send Message",
-      "defaultSubject": "Portfolio Contact",
-      "sendEmailTitle": "Send Me an Email",
-      "sendEmailDescription": "Write your message below and click \"Send\" to open your email client.",
-      "subjectPlaceholder": "Enter subject (optional)",
-      "messagePlaceholder": "Your Message:",
-      "sendButton": "Send"
-    }
+    "detailsLabel": "Contact details",
+    "relocation": "Open to international relocation"
   },
   "personal": {
     "name": "EL HANAFI",
-    "fullName": "EL HANAFI YASSINE",
-    "title": "Software Engineer (Java / Angular)",
+    "fullName": "Yassine EL HANAFI",
+    "title": "Full Stack Software Engineer | Java / Spring Boot / Angular",
     "location": "Casablanca, Morocco",
     "email": "elhanafiyassine21@gmail.com",
-    "phone": "+212 708 161 260"
+    "phone": "+212 7 08 16 12 60"
   },
   "projects": {
-    "tools": "Tech Stack",
+    "heading": "Selected work",
+    "intro": "Production-oriented projects across microservices, full-stack delivery, and enterprise workflows.",
+    "featured": "Featured",
+    "technologies": "Technologies",
+    "viewCode": "View source code",
     "cliffford": {
       "title": "Cliffford",
-      "description": "Chatbot with hand gesture control using computer vision and neural networks. Includes real-time data sync and user authentication."
+      "summary": "Gesture-controlled chatbot built with OpenCV, CNN/LSTM models, and Firebase authentication.",
+      "impact": "End-to-end ML pipeline with a responsive web interface."
     },
     "pokerPlanning": {
       "title": "Poker Planning",
-      "description": "Web tool for team estimation with live voting and real-time updates. Supports interactive sessions for planning tasks."
+      "summary": "Real-time agile estimation tool with Spring Boot WebSockets and an Angular client.",
+      "impact": "Live vote aggregation for distributed planning sessions."
     },
     "tawajooh": {
       "title": "Tawajooh",
-      "description": "Web app to manage student applications. Handles form submission, document tracking, and status updates."
+      "summary": "Student application portal with form workflows, document tracking, and status dashboards.",
+      "impact": "Streamlined orientation processing for a provincial education authority."
     },
     "hospitalManagement": {
       "title": "Hospital Management",
-      "description": "Desktop app for scheduling, patient records, and doctor availability. Includes data storage and caching."
+      "summary": "JavaFX desktop app for scheduling and patient records with MongoDB and Redis caching.",
+      "impact": "Unified clinic scheduling and records in one application."
     },
     "blogger": {
       "title": "Blogger",
-      "description": "Platform for creating and managing blog posts. Includes user login, editing, and comment features."
+      "summary": "Blogging platform with Express.js, Prisma ORM, and role-based access control.",
+      "impact": "Full CRUD publishing workflow with user accounts and comments."
     },
     "ensetCandidature": {
       "title": "ENSET Candidature",
-      "description": "Admissions management tool for schools. Supports application tracking, evaluation, and scoring."
+      "summary": "Microservices admissions platform with Spring Boot, Angular, Docker, and MySQL.",
+      "impact": "Automated scoring and evaluation for engineering school admissions."
     },
     "astreintEase": {
       "title": "AstreintEase",
-      "description": "Web app for managing on-call requests with approval workflows and calendar sync. Built using microservices."
+      "summary": "On-call management system with Spring Cloud microservices and approval workflows.",
+      "impact": "Reduced manual coordination for team duty scheduling."
     },
     "orangeStaffing": {
       "title": "Orange Staffing",
-      "description": "Tool for handling internal recruitment. Manages job listings, applications, and interview scheduling."
+      "summary": "Internal recruitment platform from job posting to interview scheduling.",
+      "impact": "Consolidated hiring pipeline for Orange Business HR teams."
     }
   },
   "experience": {
-    "inetum": {
-      "company": "Inetum",
-      "title": "Software Engineer",
-      "date": "JAN 2025 - PRESENT",
-      "description": "Worked on a financial system used by local authorities in France. Built and updated features, handled real-time data, and took part in team sprints."
+    "heading": "Work experience",
+    "intro": "Enterprise roles with clear scope, technologies, and measurable outcomes.",
+    "current": "Current",
+    "skillsLabel": "Technologies",
+    "nexpublica": {
+      "company": "Nexpublica (ex. Inetum Software)",
+      "title": "Full Stack Engineer",
+      "location": "Casablanca, Morocco",
+      "date": "Jan 2025 – Present",
+      "dateIso": "2025-01",
+      "bullets": [
+        "Worked on end-to-end financial workflow features for a platform used by local government authorities, including invoice creation, validation, liquidation, status transitions, payment deadlines, and budget-related business rules",
+        "Built and integrated backend services using RabbitMQ and OpenFeign for reliable inter-service communication and consistent business rule execution",
+        "Investigated and resolved functional and technical issues across frontend, backend, database, and workflow layers in Agile/SCRUM delivery"
+      ]
     },
-    "orangeBusinessServices": {
-      "company": "Orange Business Services",
-      "title": "Software Engineer",
-      "date1": "FEB 2024 - AUG 2024",
-      "description1": "Developed backend and frontend for a request validation tool. Set up microservices with service discovery, load balancing, and external config.",
-      "date2": "JULY 2023 - SEPT 2023",
-      "description2": "Created a tool for managing hiring steps from posting to selection. Used rapid development tools to speed up setup and deployment."
+    "orange1": {
+      "company": "Orange Business",
+      "title": "Full Stack Engineer Intern",
+      "location": "Rabat, Morocco",
+      "date": "Feb 2024 – Aug 2024",
+      "dateIso": "2024-02/2024-08",
+      "bullets": [
+        "Designed and developed an on-call request management application based on a microservices architecture, covering request creation, validation workflows, and status tracking",
+        "Implemented backend services using Spring Boot and Spring Cloud, including service discovery, inter-service communication, and centralized configuration"
+      ]
+    },
+    "orange2": {
+      "company": "Orange Business",
+      "title": "Full Stack Developer Intern",
+      "location": "Rabat, Morocco",
+      "date": "Jul 2023 – Sep 2023",
+      "dateIso": "2023-07/2023-09",
+      "bullets": [
+        "Designed and developed an internal recruitment management application to automate candidate tracking, user management, and recruitment workflow follow-up"
+      ]
     },
     "cegedim": {
-      "company": "CEGEDIM",
-      "title": "Software Engineer",
-      "date": "JULY 2022 - SEPT 2022",
-      "description": "Built a real-time web app for team planning sessions. Used WebSockets for live updates and handled voting and interaction logic."
-    },
-    "men": {
-      "company": "Direction Provinciale de l'Éducation Nationale",
-      "title": "Software Engineer",
-      "date": "MARCH 2021 - MAY 2021",
-      "description": "Developed \"Tawajooh\", a student application management system that streamlined administrative processes for students."
+      "company": "Cegedim",
+      "title": "Full Stack Developer Intern",
+      "location": "Rabat, Morocco",
+      "date": "Jul 2022 – Sep 2022",
+      "dateIso": "2022-07/2022-09",
+      "bullets": [
+        "Developed a Poker Planning application to support Agile/SCRUM estimation sessions and improve team collaboration during sprint planning",
+        "Implemented real-time communication using WebSockets/STOMP, enabling synchronized participation and live updates between users"
+      ]
     }
   },
   "language": {
     "en": "English",
     "fr": "Français",
-    "de": "Deutsch"
+    "es": "Español",
+    "select": "Select language",
+    "short": "Lang"
   },
   "resume": {
-    "download": "Download Resume"
+    "download": "Download CV"
   },
   "skills": {
-    "intro": "Here are some technologies I have been working with:"
+    "intro": "Technologies I use in production and personal projects, grouped by domain:",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Database",
+      "devops": "DevOps & Tools"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "social": "Social links"
   }
-} 
+}

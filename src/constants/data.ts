@@ -76,70 +76,60 @@ export const EXPERIENCES: Experience[] = [
     link: "https://www.linkedin.com/company/nexpublica/",
     date: "JAN 2025 - PRESENT",
     description:
-      "Worked on a financial system used by local authorities in France. Built and updated features, handled real-time data, and took part in team sprints.",
+      "Worked on end-to-end financial workflow features for a platform used by local government authorities. Built and integrated backend services using RabbitMQ and OpenFeign.",
     skills:
-      "Spring Boot · Angular · RabbitMQ · PostgreSQL · SCRUM · GitLab · OpenFeign · Lua · Nginx",
+      "Java · Spring Boot · Angular · PostgreSQL · RabbitMQ · OpenFeign · GitLab · Lua · Nginx",
     isActive: true,
   },
   {
     id: "2",
     abbreviation: "OBS",
-    companyName: "Orange Business Services",
-    title: "Full Stack Engineer",
+    companyName: "Orange Business",
+    title: "Full Stack Engineer Intern",
     link: "https://www.linkedin.com/company/orange-business-services-maroc",
     date: "FEB 2024 - AUG 2024",
     description:
-      "Developed backend and frontend for a request validation tool. Set up microservices with service discovery, load balancing, and external config.",
+      "Designed and developed an on-call request management application based on a microservices architecture with Spring Boot and Spring Cloud.",
     skills:
-      "Microservices · Java · Spring Boot · Spring Cloud · Angular · MySQL · SCRUM · Git · Eureka · OpenFeign",
+      "Java · Spring Boot · Spring Cloud · Microservices · Angular · MySQL · SCRUM",
     isActive: false,
   },
   {
     id: "3",
     abbreviation: "OBS",
-    companyName: "Orange Business Services",
-    title: "Full Stack Developer",
+    companyName: "Orange Business",
+    title: "Full Stack Developer Intern",
     link: "https://www.linkedin.com/company/orange-business-services-maroc",
     date: "JULY 2023 - SEPT 2023",
     description:
-      "Created a tool for managing hiring steps from posting to selection. Used rapid development tools to speed up setup and deployment.",
+      "Designed and developed an internal recruitment management application to automate candidate tracking and recruitment workflow follow-up.",
     skills:
-      "Java · Spring Boot · Angular · Bootstrap · MySQL · SCRUM · Git · JHipster",
+      "Java · Spring Boot · Angular · Bootstrap · MySQL · JHipster · SCRUM",
     isActive: false,
   },
   {
     id: "4",
     abbreviation: "CEGEDIM",
-    companyName: "CEGEDIM",
-    title: "Full Stack Developer",
+    companyName: "Cegedim",
+    title: "Full Stack Developer Intern",
     link: "https://www.linkedin.com/company/cegedim/",
     date: "JULY 2022 - SEPT 2022",
     description:
-      "Built a real-time web app for team planning sessions. Used WebSockets for live updates and handled voting and interaction logic.",
+      "Developed a Poker Planning application with real-time WebSockets/STOMP communication for Agile/SCRUM estimation sessions.",
     skills:
-      "Java · Spring Boot · React.js · Tailwind CSS · MySQL · SCRUM · Git",
-    isActive: false,
-  },
-  {
-    id: "5",
-    abbreviation: "MEN",
-    companyName: "Direction Provinciale de l'Éducation Nationale",
-    title: "Software Engineer",
-    link: "https://www.men.gov.ma/",
-    date: "MARCH 2021 - MAY 2021",
-    description: 'Developed "Tawajooh", a student application management system that streamlined administrative processes for students.',
-    skills:
-      "Flask · HTML/CSS · JavaScript · Bootstrap · Firebase Realtime Database · Python",
+      "Java · Spring Boot · STOMP · Angular · Bootstrap · MySQL · SCRUM",
     isActive: false,
   },
 ];
 
 export const PERSONAL_INFO = {
   name: "EL HANAFI",
-  fullName: "EL HANAFI YASSINE",
-  title: "Software Engineer",
+  fullName: "Yassine EL HANAFI",
+  title: "Full Stack Software Engineer | Java / Spring Boot / Angular",
   location: "Casablanca, Morocco",
-  description: "Welcome! I’m EL HANAFI, a passionate software engineer based in Casablanca, Morocco. I specialize in building innovative and scalable digital solutions that solve real-world problems. Let’s connect and bring your vision to life.",
-  aboutDescription: "Software Engineer with a passion for programming and problem-solving. Proficient in full-stack development with Spring and Angular, and experienced in delivering impactful solutions at leading companies. I thrive on crafting clean, efficient code and transforming complex ideas into real-world applications.",
-  resumeUrl: "/Resume_Yassine_EL_HANAFI.pdf"
-}; 
+  description:
+    "Full Stack Software Engineer specialized in Java, Spring Boot, and Angular, with experience building financial and workflow-based applications in Agile environments.",
+  aboutDescription:
+    "Full Stack Software Engineer specialized in Java, Spring Boot, and Angular. Focused on clean code, maintainability, and production-ready delivery across backend services, REST APIs, databases, and frontend integration.",
+  resumeUrl: "/Resume_Yassine_EL_HANAFI.pdf",
+};

@@ -2,79 +2,67 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { ResumeDownloadButton } from '../ui';
 import styles from './Contact.module.css';
+
+const GITHUB_URL = 'https://github.com/yassinehanafi3';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/elhanafiyassine/';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <div id="contact" className="container">
-      <h3 className="title">/{t('navigation.contact')}</h3>
+      <p className="sectionLabel">/contact</p>
+      <h2 id="contact-heading" className="title">
+        {t('contact.heading')}
+      </h2>
+      <p className="sectionIntro">{t('contact.description')}</p>
 
-      <div className={styles.contactLayout}>
-        <div className={styles.contactCopy}>
-          <h2 className={styles.contactTitle}>{t('contact.getInTouch')}</h2>
-          <p className={styles.contactDescription}>{t('contact.description')}</p>
-          <p className={styles.contactCta}>{t('contact.cta')}</p>
-
-          <div className={styles.socialIcons}>
-            <a
-              href="https://github.com/yassinehanafi3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialLink}
-            >
-              <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} />
+      <div className={styles.layout}>
+        <div className={styles.ctaBlock}>
+          <p className={styles.ctaText}>{t('contact.getInTouch')}</p>
+          <div className={styles.buttons}>
+            <ResumeDownloadButton />
+            <a href={`mailto:${t('personal.email')}`} className="btn-primary">
+              <FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
+              {t('contact.emailCta')}
             </a>
-            <a
-              href="https://www.linkedin.com/in/elhanafiyassine/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialLink}
-            >
-              <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} />
+          </div>
+          <div className={styles.social}>
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="btn-link">
+              <FontAwesomeIcon icon={faLinkedin} aria-hidden="true" />
+              {t('contact.linkedinCta')}
+            </a>
+            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="btn-link">
+              <FontAwesomeIcon icon={faGithub} aria-hidden="true" />
+              {t('contact.githubCta')}
             </a>
           </div>
         </div>
 
-        <aside className={styles.contactAside} aria-label={t('navigation.contact')}>
-          <div className={styles.contactDetails}>
-            <div className={styles.contactItem}>
-              <div className={styles.contactIcon}>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-              </div>
-              <div className={styles.contactText}>
-                <h4>{t('contact.location')}</h4>
-                <p>{t('personal.location')}</p>
-              </div>
-            </div>
-
-            <div className={styles.contactItem}>
-              <div className={styles.contactIcon}>
-                <FontAwesomeIcon icon={faEnvelope} />
-              </div>
-              <div className={styles.contactText}>
-                <h4>{t('contact.email')}</h4>
-                <a href="mailto:elhanafiyassine21@gmail.com" className={styles.contactLink}>
-                  {t('personal.email')}
-                </a>
-              </div>
-            </div>
-
-            <div className={styles.contactItem}>
-              <div className={styles.contactIcon}>
-                <FontAwesomeIcon icon={faPhone} />
-              </div>
-              <div className={styles.contactText}>
-                <h4>{t('contact.phone')}</h4>
-                <a href="tel:+212708161260" className={styles.contactLink}>
-                  {t('personal.phone')}
-                </a>
-              </div>
-            </div>
+        <dl className={styles.details}>
+          <div>
+            <dt>{t('contact.location')}</dt>
+            <dd>
+              {t('personal.location')}
+              <span className={styles.note}>{t('contact.relocation')}</span>
+            </dd>
           </div>
-        </aside>
+          <div>
+            <dt>{t('contact.email')}</dt>
+            <dd>
+              <a href={`mailto:${t('personal.email')}`}>{t('personal.email')}</a>
+            </dd>
+          </div>
+          <div>
+            <dt>{t('contact.phone')}</dt>
+            <dd>
+              <a href="tel:+212708161260">{t('personal.phone')}</a>
+            </dd>
+          </div>
+        </dl>
       </div>
     </div>
   );

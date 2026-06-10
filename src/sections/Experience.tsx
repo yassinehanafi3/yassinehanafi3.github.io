@@ -1,19 +1,20 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Timeline } from '../ui';
-import styles from './Experience.module.css';
 
 const Experience: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <div id="experience" className="container">
-      <h3 className="title">/{t('navigation.experience')}</h3>
-      <div className={styles.experienceContent}>
-        <Timeline />
-      </div>
+      <p className="sectionLabel">/experience</p>
+      <h2 id="experience-heading" className="title">
+        {t('experience.heading')}
+      </h2>
+      <p className="sectionIntro">{t('experience.intro')}</p>
+      <Timeline />
     </div>
   );
 };
 
-export { Experience }; 
+export { Experience };

@@ -1,110 +1,88 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { LanguageSwitcher } from '../ui';
 import styles from './SideBar.module.css';
 
-interface SideBarProps {
-  intro: string;
-  about: string;
-  experience: string;
-  projects: string;
-  contact: string;
-}
+const SECTIONS = ['intro', 'about', 'experience', 'projects', 'contact'] as const;
 
-const SideBar: React.FC<SideBarProps> = ({ intro, about, experience, projects, contact }) => {
+const GITHUB_URL = 'https://github.com/yassinehanafi3';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/elhanafiyassine/';
+
+const SideBar: React.FC = () => {
   const { t } = useTranslation();
-  const [activeSection, setActiveSection] = useState('intro');
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = [intro, about, experience, projects, contact];
-      const scrollPosition = window.scrollY + window.innerHeight / 3;
-      
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const element = document.getElementById(sections[i]);
-        if (element && element.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i]);
-          break;
-        }
-      }
-    };
+  const [activeSection, setActiveSection] = useState<string>('intro');
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial call
-    
+  const handleScroll = useCallback(() => {
+    const scrollPosition = window.scrollY + window.innerHeight / 3;
+
+    for (let i = SECTIONS.length - 1; i >= 0; i--) {
+      const element = document.getElementById(SECTIONS[i]);
+      if (element && element.offsetTop <= scrollPosition) {
+        setActiveSection(SECTIONS[i]);
+        break;
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [intro, about, experience, projects, contact]);
-  
+  }, [handleScroll]);
+
   return (
-    <div className={styles.sideNav}>
-      <ul className={styles.navLinks}>
+    <div className={styles.sideRail}>
+      <div className={styles.langAnchor}>
+        <LanguageSwitcher variant="rail" />
+      </div>
+
+      <aside className={styles.sideNav} aria-label={t('navigation.main')}>
+        <nav className={styles.navBlock}>
+        <ul className={styles.navLinks}>
+          {SECTIONS.map((section) => (
+            <li key={section}>
+              <a
+                href={`#${section}`}
+                className={activeSection === section ? styles.active : undefined}
+                aria-current={activeSection === section ? 'true' : undefined}
+                aria-label={t(`navigation.${section}`)}
+              >
+                /{section}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <ul className={styles.socialLinks} aria-label={t('footer.social')}>
         <li>
-          <a 
-            href={`#${intro}`} 
-            className={activeSection === intro ? styles.active : ''}
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialLink}
+            aria-label="GitHub"
           >
-            {t('navigation.intro')}
+            <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} aria-hidden="true" />
           </a>
         </li>
         <li>
-          <a 
-            href={`#${about}`} 
-            className={activeSection === about ? styles.active : ''}
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialLink}
+            aria-label="LinkedIn"
           >
-            {t('navigation.about')}
-          </a>
-        </li>
-        <li>
-          <a 
-            href={`#${experience}`} 
-            className={activeSection === experience ? styles.active : ''}
-          >
-            {t('navigation.experience')}
-          </a>
-        </li>
-        <li>
-          <a 
-            href={`#${projects}`} 
-            className={activeSection === projects ? styles.active : ''}
-          >
-            {t('navigation.projects')}
-          </a>
-        </li>
-        <li>
-          <a 
-            href={`#${contact}`} 
-            className={activeSection === contact ? styles.active : ''}
-          >
-            {t('navigation.contact')}
+            <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} aria-hidden="true" />
           </a>
         </li>
       </ul>
-      
-      <ul className={styles.socialLinks}>
-        <li>
-          <a 
-            href="https://github.com/yassinehanafi3" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-          >
-            <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} />
-          </a>
-        </li>
-        <li>
-          <a 
-            href="https://www.linkedin.com/in/elhanafiyassine/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-          >
-            <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} />
-          </a>
-        </li>
-      </ul>
+      </aside>
     </div>
   );
 };
 
-export { SideBar }; 
+export { SideBar };
