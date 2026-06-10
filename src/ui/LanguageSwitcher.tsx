@@ -2,17 +2,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './LanguageSwitcher.module.css';
 
-interface LanguageSwitcherProps {
-  variant?: 'rail' | 'inline';
-}
-
 const LANGUAGES = [
   { code: 'en', label: 'EN' },
   { code: 'fr', label: 'FR' },
   { code: 'es', label: 'ES' },
 ] as const;
 
-const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'rail' }) => {
+const LanguageSwitcher: React.FC = () => {
   const { i18n, t } = useTranslation();
   const current = i18n.language?.slice(0, 2) || 'en';
   const activeIndex = Math.max(
@@ -20,10 +16,8 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'rail' })
     LANGUAGES.findIndex((lang) => lang.code === current)
   );
 
-  const wrapClass = variant === 'rail' ? styles.railWrap : styles.inlineWrap;
-
   return (
-    <div className={wrapClass} role="group" aria-label={t('language.select')}>
+    <div className={styles.railWrap} role="group" aria-label={t('language.select')}>
       <div className={styles.segment}>
         <span
           className={styles.indicator}

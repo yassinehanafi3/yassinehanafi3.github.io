@@ -5,9 +5,7 @@
     "about": "À propos",
     "experience": "Expérience",
     "projects": "Projets",
-    "contact": "Contact",
-    "openMenu": "Ouvrir le menu",
-    "closeMenu": "Fermer le menu"
+    "contact": "Contact"
   },
   "intro": {
     "roleLabel": "Ingénieur Full Stack",
@@ -20,11 +18,7 @@
     "trust1": "Workflows financiers bout-en-bout pour les collectivités territoriales",
     "trust2": "Microservices avec Spring Boot, Spring Cloud, RabbitMQ et OpenFeign",
     "trust3": "Frontends Angular avec API REST et temps réel WebSockets/STOMP",
-    "contactCta": "Me contacter",
-    "linkedin": "LinkedIn",
-    "github": "GitHub",
-    "linkedinAria": "Voir le profil LinkedIn",
-    "githubAria": "Voir le profil GitHub"
+    "contactCta": "Me contacter"
   },
   "about": {
     "heading": "À propos",
@@ -40,7 +34,6 @@
     "location": "Localisation",
     "email": "Email",
     "phone": "Téléphone",
-    "detailsLabel": "Coordonnées",
     "relocation": "Ouvert à la mobilité internationale"
   },
   "personal": {
@@ -152,14 +145,12 @@
     "en": "English",
     "fr": "Français",
     "es": "Español",
-    "select": "Choisir la langue",
-    "short": "Lang"
+    "select": "Choisir la langue"
   },
   "resume": {
     "download": "Télécharger le CV"
   },
   "skills": {
-    "intro": "Technologies que j'utilise en production et en projets personnels, regroupées par domaine :",
     "categories": {
       "backend": "Backend",
       "frontend": "Frontend",

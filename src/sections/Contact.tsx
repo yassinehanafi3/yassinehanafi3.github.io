@@ -3,11 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { GITHUB_URL, LINKEDIN_URL } from '../constants/urls';
 import { ResumeDownloadButton } from '../ui';
 import styles from './Contact.module.css';
-
-const GITHUB_URL = 'https://github.com/yassinehanafi3';
-const LINKEDIN_URL = 'https://www.linkedin.com/in/elhanafiyassine/';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();

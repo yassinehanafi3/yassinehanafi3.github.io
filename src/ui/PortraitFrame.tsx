@@ -6,7 +6,6 @@ interface PortraitFrameProps {
   alt: string;
 }
 
-// Taller cloud — extra vertical room for a portrait (viewBox 280 × 340)
 const CLOUD =
   'M 140 295 C 88 295 54 274 48 236 C 22 224 10 188 22 154 C 4 132 12 92 44 78 C 36 44 76 28 112 44 C 136 14 184 12 214 36 C 252 20 286 54 278 98 C 304 122 300 168 274 196 C 290 236 258 272 216 284 C 186 308 138 310 140 295 Z';
 

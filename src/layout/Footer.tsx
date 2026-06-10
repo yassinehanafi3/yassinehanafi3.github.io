@@ -1,9 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { GITHUB_URL, LINKEDIN_URL } from '../constants/urls';
 import styles from './Footer.module.css';
-
-const GITHUB_URL = 'https://github.com/yassinehanafi3';
-const LINKEDIN_URL = 'https://www.linkedin.com/in/elhanafiyassine/';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();

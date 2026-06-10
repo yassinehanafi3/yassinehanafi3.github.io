@@ -2,13 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { GITHUB_URL, LINKEDIN_URL } from '../constants/urls';
 import { LanguageSwitcher } from '../ui';
 import styles from './SideBar.module.css';
 
 const SECTIONS = ['intro', 'about', 'experience', 'projects', 'contact'] as const;
-
-const GITHUB_URL = 'https://github.com/yassinehanafi3';
-const LINKEDIN_URL = 'https://www.linkedin.com/in/elhanafiyassine/';
 
 const SideBar: React.FC = () => {
   const { t } = useTranslation();
@@ -35,51 +33,51 @@ const SideBar: React.FC = () => {
   return (
     <div className={styles.sideRail}>
       <div className={styles.langAnchor}>
-        <LanguageSwitcher variant="rail" />
+        <LanguageSwitcher />
       </div>
 
       <aside className={styles.sideNav} aria-label={t('navigation.main')}>
         <nav className={styles.navBlock}>
-        <ul className={styles.navLinks}>
-          {SECTIONS.map((section) => (
-            <li key={section}>
-              <a
-                href={`#${section}`}
-                className={activeSection === section ? styles.active : undefined}
-                aria-current={activeSection === section ? 'true' : undefined}
-                aria-label={t(`navigation.${section}`)}
-              >
-                /{section}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+          <ul className={styles.navLinks}>
+            {SECTIONS.map((section) => (
+              <li key={section}>
+                <a
+                  href={`#${section}`}
+                  className={activeSection === section ? styles.active : undefined}
+                  aria-current={activeSection === section ? 'true' : undefined}
+                  aria-label={t(`navigation.${section}`)}
+                >
+                  /{section}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-      <ul className={styles.socialLinks} aria-label={t('footer.social')}>
-        <li>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-            aria-label="GitHub"
-          >
-            <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} aria-hidden="true" />
-          </a>
-        </li>
-        <li>
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-            aria-label="LinkedIn"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} aria-hidden="true" />
-          </a>
-        </li>
-      </ul>
+        <ul className={styles.socialLinks} aria-label={t('footer.social')}>
+          <li>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="GitHub"
+            >
+              <FontAwesomeIcon icon={faGithub} aria-hidden="true" />
+            </a>
+          </li>
+          <li>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="LinkedIn"
+            >
+              <FontAwesomeIcon icon={faLinkedin} aria-hidden="true" />
+            </a>
+          </li>
+        </ul>
       </aside>
     </div>
   );
