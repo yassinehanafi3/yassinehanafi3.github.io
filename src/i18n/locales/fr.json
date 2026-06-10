@@ -8,26 +8,26 @@
     "contact": "Contact"
   },
   "intro": {
-    "roleLabel": "Ingénieur Full Stack",
+    "roleLabel": "Développeur Backend & Full-Stack",
     "headline": "Yassine EL HANAFI",
     "stackLine": "Java · Spring Boot · Angular",
-    "description": "Ingénieur Full Stack spécialisé en Java, Spring Boot et Angular, avec une expérience dans le développement d'applications financières et de workflows en environnement Agile. À l'aise sur les services backend, les API REST, les bases de données et l'intégration frontend, avec un focus sur le code propre, la maintenabilité et la livraison en production.",
+    "description": "Je développe des applications web d'entreprise et financières avec Java, Spring Boot, Angular, PostgreSQL, RabbitMQ et des API REST. Actuellement chez Nexpublica.",
     "profileAlt": "Portrait de {{fullName}}",
-    "availability": "Ouvert aux opportunités internationales",
-    "trustLabel": "Points forts",
-    "trust1": "Workflows financiers bout-en-bout pour les collectivités territoriales",
-    "trust2": "Microservices avec Spring Boot, Spring Cloud, RabbitMQ et OpenFeign",
-    "trust3": "Frontends Angular avec API REST et temps réel WebSockets/STOMP",
+    "availability": "Basé au Maroc. Ouvert aux opportunités internationales.",
+    "trustLabel": "Points clés",
+    "trust1": "Workflows financiers pour des plateformes du secteur public",
+    "trust2": "Services backend avec Spring Boot, PostgreSQL, RabbitMQ, OpenFeign",
+    "trust3": "Frontends Angular intégrés aux API REST",
     "contactCta": "Me contacter"
   },
   "about": {
     "heading": "À propos",
-    "description": "Ingénieur Full Stack spécialisé en Java, Spring Boot et Angular, avec une expérience dans le développement d'applications financières et de workflows en environnement Agile. Je travaille sur les services backend, les API REST, les bases de données et l'intégration frontend, avec un focus sur le code propre, la maintenabilité et la livraison en production."
+    "description": "Ingénieur Logiciel chez Nexpublica, sur des plateformes de gestion financière pour le secteur public. Je développe des services backend avec Java et Spring Boot, intègre des interfaces Angular aux API REST, et contribue au débogage, à la validation et à la documentation en équipe Agile. Expérience précédente chez Orange Business et Cegedim."
   },
   "contact": {
     "heading": "Contact",
-    "getInTouch": "Restons en contact",
-    "description": "Ouvert aux postes d'ingénieur full stack à l'international. Téléchargez mon CV ou contactez-moi directement.",
+    "getInTouch": "Ouvert aux postes Backend Java, Full Stack Java/Angular et Ingénieur Logiciel à l'international.",
+    "description": "Téléchargez mon CV, envoyez-moi un email ou contactez-moi sur LinkedIn.",
     "emailCta": "Envoyer un email",
     "linkedinCta": "LinkedIn",
     "githubCta": "GitHub",
@@ -37,75 +37,76 @@
     "relocation": "Ouvert à la mobilité internationale"
   },
   "personal": {
-    "name": "EL HANAFI",
     "fullName": "Yassine EL HANAFI",
-    "title": "Ingénieur Full Stack | Java / Spring Boot / Angular",
     "location": "Casablanca, Maroc",
     "email": "elhanafiyassine21@gmail.com",
     "phone": "+212 7 08 16 12 60"
   },
   "projects": {
     "heading": "Projets sélectionnés",
-    "intro": "Projets orientés production : microservices, full-stack et workflows entreprise.",
+    "intro": "Projets Java, Spring Boot et Angular issus de la production et de stages.",
     "featured": "À la une",
-    "technologies": "Technologies",
     "viewCode": "Voir le code source",
     "cliffford": {
       "title": "Cliffford",
       "summary": "Chatbot contrôlé par gestes avec OpenCV, modèles CNN/LSTM et authentification Firebase.",
-      "impact": "Pipeline ML bout-en-bout avec interface web réactive."
+      "impact": "Prototype d'interaction accessible par gestes."
     },
     "pokerPlanning": {
       "title": "Poker Planning",
       "summary": "Outil d'estimation agile temps réel avec WebSockets Spring Boot et client Angular.",
-      "impact": "Agrégation de votes en direct pour sessions de planning distribuées."
+      "impact": "Estimation de sprint en direct pour équipes Agile distribuées."
     },
     "tawajooh": {
       "title": "Tawajooh",
       "summary": "Portail de candidatures étudiantes avec workflows, suivi documentaire et tableaux de bord.",
-      "impact": "Simplification du traitement d'orientation pour une direction provinciale."
+      "impact": "Digitalisation des demandes d'orientation pour une direction provinciale."
     },
     "hospitalManagement": {
       "title": "Gestion hospitalière",
-      "summary": "Application JavaFX pour planification et dossiers patients avec MongoDB et Redis.",
-      "impact": "Planification et dossiers unifiés dans une seule application."
+      "summary": "Application JavaFX pour la planification clinique et les dossiers patients avec MongoDB et Redis.",
+      "impact": "Planification et dossiers patients dans un seul outil."
     },
     "blogger": {
       "title": "Blogger",
       "summary": "Plateforme de blogging avec Express.js, Prisma ORM et contrôle d'accès par rôles.",
-      "impact": "Workflow de publication complet avec comptes utilisateurs et commentaires."
+      "impact": "Publication de contenu avec comptes, articles et commentaires."
     },
     "ensetCandidature": {
       "title": "ENSET Candidature",
       "summary": "Plateforme d'admissions microservices avec Spring Boot, Angular, Docker et MySQL.",
-      "impact": "Scoring et évaluation automatisés pour les admissions d'école d'ingénieurs."
+      "role": "Tech lead, Scrum Master et développeur dans une équipe de 5.",
+      "impact": "Scoring et évaluation automatisés pour les admissions d'une école d'ingénieurs."
     },
     "astreintEase": {
       "title": "AstreintEase",
       "summary": "Gestion d'astreintes avec microservices Spring Cloud et workflows d'approbation.",
-      "impact": "Réduction de la coordination manuelle pour les plannings d'équipe."
+      "role": "Tech lead et développeur. Stage Orange Business.",
+      "impact": "Remplacement de la coordination manuelle des astreintes chez Orange Business."
     },
     "orangeStaffing": {
       "title": "Orange Staffing",
-      "summary": "Plateforme de recrutement interne de la publication à la planification d'entretiens.",
-      "impact": "Pipeline de recrutement consolidé pour les équipes RH d'Orange Business."
+      "summary": "Plateforme de recrutement interne avec Spring Boot et Angular.",
+      "role": "Tech lead et développeur dans une équipe de 3. Stage Orange Business.",
+      "impact": "Workflow de recrutement unique pour les RH Orange, de la publication à l'entretien."
     }
   },
   "experience": {
     "heading": "Expérience professionnelle",
-    "intro": "Rôles en entreprise avec périmètre, technologies et résultats clairs.",
+    "intro": "Plateformes financières, systèmes télécom et applications RH livrées avec Java et Spring Boot.",
     "current": "Actuel",
     "skillsLabel": "Technologies",
     "nexpublica": {
       "company": "Nexpublica (ex. Inetum Software)",
-      "title": "Ingénieur Full Stack",
+      "title": "Ingénieur Logiciel",
       "location": "Casablanca, Maroc",
       "date": "Janv. 2025 – Présent",
       "dateIso": "2025-01",
       "bullets": [
-        "Travail sur des fonctionnalités de workflow financier bout-en-bout pour une plateforme utilisée par les collectivités, incluant la création de factures, la validation, la liquidation, les transitions de statut, les échéances de paiement et les règles métier budgétaires",
-        "Construction et intégration de services backend avec RabbitMQ et OpenFeign pour une communication inter-services fiable et une exécution cohérente des règles métier",
-        "Investigation et résolution de problèmes fonctionnels et techniques sur le frontend, le backend, la base de données et les workflows en livraison Agile/SCRUM"
+        "Développement et maintenance de fonctionnalités pour une plateforme de gestion financière utilisée par des organisations du secteur public.",
+        "Implémentation de workflows métier backend avec Java, Spring Boot, PostgreSQL, RabbitMQ et OpenFeign.",
+        "Intégration d'interfaces Angular aux API REST et contribution au débogage, à la validation et à la documentation technique.",
+        "Travail en Agile/SCRUM avec GitLab."
       ]
     },
     "orange1": {
@@ -115,8 +116,9 @@
       "date": "Fév. 2024 – Août 2024",
       "dateIso": "2024-02/2024-08",
       "bullets": [
-        "Conception et développement d'une application de gestion des demandes d'astreinte basée sur une architecture microservices, couvrant la création de demandes, les workflows de validation et le suivi de statut",
-        "Implémentation de services backend avec Spring Boot et Spring Cloud, incluant service discovery, communication inter-services et configuration centralisée"
+        "Développement d'une application de gestion des astreintes avec Spring Boot, Spring Cloud et Angular.",
+        "Couverture de la création de demandes, des workflows de validation et du suivi de statut en microservices.",
+        "Livraison d'API REST et d'interfaces Angular pour les équipes opérationnelles."
       ]
     },
     "orange2": {
@@ -126,7 +128,8 @@
       "date": "Juil. 2023 – Sep. 2023",
       "dateIso": "2023-07/2023-09",
       "bullets": [
-        "Conception et développement d'une application interne de gestion du recrutement pour automatiser le suivi des candidats, la gestion des utilisateurs et le suivi des workflows de recrutement"
+        "Développement d'une application interne de recrutement pour le suivi des candidats et des workflows d'embauche.",
+        "Développement d'API REST Spring Boot et d'écrans Angular utilisés par les équipes RH d'Orange Business."
       ]
     },
     "cegedim": {
@@ -136,8 +139,8 @@
       "date": "Juil. 2022 – Sep. 2022",
       "dateIso": "2022-07/2022-09",
       "bullets": [
-        "Développement d'une application Poker Planning pour les sessions d'estimation Agile/SCRUM et la collaboration en équipe lors du sprint planning",
-        "Implémentation de la communication temps réel avec WebSockets/STOMP, permettant une participation synchronisée et des mises à jour en direct"
+        "Développement d'une application Poker Planning pour les sessions d'estimation Agile avec Spring Boot et Angular.",
+        "Mises à jour en temps réel avec WebSockets/STOMP pour le planning d'équipe synchronisé."
       ]
     }
   },
@@ -155,7 +158,8 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "database": "Base de données",
-      "devops": "DevOps & Outils"
+      "devops": "DevOps & Outils",
+      "practices": "Pratiques"
     }
   },
   "footer": {
