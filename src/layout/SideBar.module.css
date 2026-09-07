@@ -6,7 +6,7 @@
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  z-index: 500;
+  z-index: 50;
   pointer-events: auto;
 }
 
@@ -14,7 +14,7 @@
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
-  z-index: 500;
+  z-index: 50;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -39,6 +39,7 @@
   position: relative;
   display: block;
   padding: 0.25rem 0;
+  font-family: var(--font-mono);
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -81,6 +82,11 @@
   transform: translateY(-50%) scaleX(1);
 }
 
+.navLinks a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .socialLinks {
   list-style: none;
   display: flex;
@@ -101,7 +107,6 @@
   font-size: 1rem;
   text-decoration: none;
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
   background: var(--surface);
   cursor: pointer;
   transition:
@@ -117,11 +122,6 @@
 }
 
 .socialLink:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.navLinks a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }

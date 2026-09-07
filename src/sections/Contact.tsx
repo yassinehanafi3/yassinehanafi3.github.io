@@ -2,67 +2,98 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { GITHUB_URL, LINKEDIN_URL } from '../constants/urls';
-import { ResumeDownloadButton } from '../ui';
+import { Panel, ResumeDownloadButton } from '../ui';
 import styles from './Contact.module.css';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
+  const email = t('personal.email');
+
+  const channels = [
+    {
+      id: 'email',
+      label: t('contact.email'),
+      value: email,
+      href: `mailto:${email}`,
+      icon: faEnvelope,
+      external: false,
+    },
+    {
+      id: 'linkedin',
+      label: t('contact.linkedinCta'),
+      value: 'linkedin.com/in/elhanafiyassine',
+      href: LINKEDIN_URL,
+      icon: faLinkedin,
+      external: true,
+    },
+    {
+      id: 'github',
+      label: t('contact.githubCta'),
+      value: 'github.com/yassinehanafi3',
+      href: GITHUB_URL,
+      icon: faGithub,
+      external: true,
+    },
+    {
+      id: 'phone',
+      label: t('contact.phone'),
+      value: t('personal.phone'),
+      href: 'tel:+212708161260',
+      icon: faPhone,
+      external: false,
+    },
+  ];
 
   return (
-    <div id="contact" className="container">
-      <p className="sectionLabel">/contact</p>
-      <h2 id="contact-heading" className="title">
-        {t('contact.heading')}
-      </h2>
-      <p className="sectionIntro">{t('contact.description')}</p>
-
+    <Panel
+      id="contact"
+      headingId="contact-heading"
+      index="05"
+      label={t('navigation.contact')}
+      meta={t('contact.openChannel')}
+    >
       <div className={styles.layout}>
-        <div>
-          <p className={styles.ctaText}>{t('contact.getInTouch')}</p>
-          <div className={styles.buttons}>
+        <div className={styles.prompt}>
+          <p className={styles.cta}>{t('contact.getInTouch')}</p>
+          <p className={styles.hint}>{t('contact.description')}</p>
+          <div className={styles.actions}>
             <ResumeDownloadButton />
-            <a href={`mailto:${t('personal.email')}`} className="btn-primary">
-              <FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
-              {t('contact.emailCta')}
-            </a>
-          </div>
-          <div className={styles.social}>
-            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="btn-link">
-              <FontAwesomeIcon icon={faLinkedin} aria-hidden="true" />
-              {t('contact.linkedinCta')}
-            </a>
-            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="btn-link">
-              <FontAwesomeIcon icon={faGithub} aria-hidden="true" />
-              {t('contact.githubCta')}
-            </a>
           </div>
         </div>
 
-        <dl className={styles.details}>
-          <div>
-            <dt>{t('contact.location')}</dt>
-            <dd>
-              {t('personal.location')}
-              <span className={styles.note}>{t('contact.relocation')}</span>
-            </dd>
-          </div>
-          <div>
-            <dt>{t('contact.email')}</dt>
-            <dd>
-              <a href={`mailto:${t('personal.email')}`}>{t('personal.email')}</a>
-            </dd>
-          </div>
-          <div>
-            <dt>{t('contact.phone')}</dt>
-            <dd>
-              <a href="tel:+212708161260">{t('personal.phone')}</a>
-            </dd>
-          </div>
-        </dl>
+        <ul className={styles.channels}>
+          {channels.map((channel) => (
+            <li key={channel.id}>
+              <a
+                href={channel.href}
+                className={styles.channel}
+                {...(channel.external
+                  ? { target: '_blank', rel: 'noopener noreferrer' }
+                  : {})}
+              >
+                <span className={styles.channelLabel}>{channel.label}</span>
+                <span className={styles.channelValue}>{channel.value}</span>
+                <span className={styles.channelGo} aria-hidden="true">
+                  <FontAwesomeIcon
+                    icon={channel.external ? faArrowUpRightFromSquare : channel.icon}
+                  />
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+
+      <p className={styles.location}>
+        <span className="monoLabel">{t('contact.location')}</span>
+        <span>
+          {t('personal.location')}
+          <span className={styles.note}> — {t('contact.relocation')}</span>
+        </span>
+      </p>
+    </Panel>
   );
 };
 

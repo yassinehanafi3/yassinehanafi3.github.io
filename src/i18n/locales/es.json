@@ -5,10 +5,17 @@
     "about": "Sobre mí",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "stack": "Stack",
     "contact": "Contacto"
   },
+  "system": {
+    "logo": "YEH",
+    "product": "Portfolio",
+    "status": "Disponible",
+    "ok": "SYS.OK"
+  },
   "intro": {
-    "roleLabel": "Desarrollador Backend & Full-Stack",
+    "roleLabel": "Desarrollador Full-Stack",
     "headline": "Yassine EL HANAFI",
     "stackLine": "Java · Spring Boot · Angular",
     "description": "Desarrollo aplicaciones web empresariales y financieras con Java, Spring Boot, Angular, PostgreSQL, RabbitMQ y APIs REST. Actualmente en Nexpublica.",
@@ -18,11 +25,34 @@
     "trust1": "Workflows financieros para plataformas del sector público",
     "trust2": "Servicios backend con Spring Boot, PostgreSQL, RabbitMQ, OpenFeign",
     "trust3": "Frontends Angular integrados con APIs REST",
-    "contactCta": "Contactar"
+    "contactCta": "Contactar",
+    "systemLabel": "Sistema / Portfolio",
+    "experienceValue": "2022 — Presente",
+    "currentProject": "Nexpublica",
+    "meta": {
+      "location": "Ubicación",
+      "role": "Rol",
+      "experience": "Experiencia",
+      "current": "Actual",
+      "status": "Estado"
+    }
   },
   "about": {
     "heading": "Sobre mí",
-    "description": "Ingeniero de Software en Nexpublica, trabajando en plataformas de gestión financiera para el sector público. Desarrollo servicios backend con Java y Spring Boot, integro frontends Angular con APIs REST y contribuyo al debugging, validación y documentación en equipos Agile. Experiencia previa en Orange Business y Cegedim."
+    "description": "Ingeniero de Software en Nexpublica, trabajando en plataformas de gestión financiera para el sector público. Desarrollo servicios backend con Java y Spring Boot, integro frontends Angular con APIs REST y contribuyo al debugging, validación y documentación en equipos Agile. Experiencia previa en Orange Business y Cegedim.",
+    "systemMeta": "Perfil",
+    "roleValue": "Ingeniero de Software",
+    "focusValue": "Full-Stack",
+    "stackValue": "Java / Spring / Angular",
+    "currentValue": "Nexpublica",
+    "spec": {
+      "name": "Nombre",
+      "role": "Rol",
+      "focus": "Foco",
+      "stack": "Stack",
+      "location": "Ubicación",
+      "current": "Actual"
+    }
   },
   "contact": {
     "heading": "Contacto",
@@ -34,7 +64,8 @@
     "location": "Ubicación",
     "email": "Email",
     "phone": "Teléfono",
-    "relocation": "Abierto a reubicación internacional"
+    "relocation": "Abierto a reubicación internacional",
+    "openChannel": "Canal abierto"
   },
   "personal": {
     "fullName": "Yassine EL HANAFI",
@@ -47,6 +78,10 @@
     "intro": "Proyectos con Java, Spring Boot y Angular de trabajo en producción y prácticas.",
     "featured": "Destacado",
     "viewCode": "Ver código fuente",
+    "systemMeta": "Módulos",
+    "statusFeatured": "Destacado",
+    "statusComplete": "Completado",
+    "source": "Fuente",
     "cliffford": {
       "title": "Cliffford",
       "summary": "Chatbot controlado por gestos con OpenCV, modelos CNN/LSTM y autenticación Firebase.",
@@ -96,6 +131,7 @@
     "intro": "Plataformas financieras, sistemas de telecomunicaciones y aplicaciones de RRHH con Java y Spring Boot.",
     "current": "Actual",
     "skillsLabel": "Tecnologías",
+    "systemMeta": "Registro",
     "nexpublica": {
       "company": "Nexpublica (ex. Inetum Software)",
       "title": "Ingeniero de Software",
@@ -144,6 +180,11 @@
       ]
     }
   },
+  "stack": {
+    "heading": "Tecnología",
+    "intro": "Lenguajes, frameworks y herramientas usados en producción y prácticas.",
+    "systemMeta": "Sistema / Tecnología"
+  },
   "language": {
     "en": "English",
     "fr": "Français",
@@ -158,8 +199,8 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "database": "Base de datos",
-      "devops": "DevOps y herramientas",
-      "practices": "Prácticas"
+      "devops": "DevOps",
+      "tools": "Herramientas"
     }
   },
   "footer": {

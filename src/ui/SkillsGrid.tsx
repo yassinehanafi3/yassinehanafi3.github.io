@@ -20,7 +20,7 @@ const SKILL_GROUPS = [
     skills: ['GitLab', 'Docker', 'Nginx', 'Lua'],
   },
   {
-    category: 'practices' as const,
+    category: 'tools' as const,
     skills: ['Agile/SCRUM', 'API integration', 'Debugging', 'Documentation'],
   },
 ];
@@ -30,12 +30,22 @@ const SkillsGrid: React.FC = () => {
 
   return (
     <div className={styles.grid}>
-      {SKILL_GROUPS.map((group) => (
+      {SKILL_GROUPS.map((group, index) => (
         <div key={group.category} className={styles.group}>
-          <h4 className={styles.label}>{t(`skills.categories.${group.category}`)}</h4>
+          <h3 className={styles.label}>
+            <span className={styles.index} aria-hidden="true">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            {t(`skills.categories.${group.category}`)}
+          </h3>
           <ul className={styles.skills}>
             {group.skills.map((skill) => (
-              <li key={skill}>{skill}</li>
+              <li key={skill}>
+                <span className={styles.mark} aria-hidden="true">
+                  ▸
+                </span>
+                {skill}
+              </li>
             ))}
           </ul>
         </div>

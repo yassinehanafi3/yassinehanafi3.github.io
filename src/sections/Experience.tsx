@@ -1,19 +1,21 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Timeline } from '../ui';
+import { Panel, Timeline } from '../ui';
 
 const Experience: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="experience" className="container">
-      <p className="sectionLabel">/experience</p>
-      <h2 id="experience-heading" className="title">
-        {t('experience.heading')}
-      </h2>
+    <Panel
+      id="experience"
+      headingId="experience-heading"
+      index="03"
+      label={t('navigation.experience')}
+      meta={t('experience.systemMeta')}
+    >
       <p className="sectionIntro">{t('experience.intro')}</p>
       <Timeline />
-    </div>
+    </Panel>
   );
 };
 
