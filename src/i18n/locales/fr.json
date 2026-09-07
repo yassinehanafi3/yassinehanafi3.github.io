@@ -5,10 +5,17 @@
     "about": "À propos",
     "experience": "Expérience",
     "projects": "Projets",
+    "stack": "Stack",
     "contact": "Contact"
   },
+  "system": {
+    "logo": "YEH",
+    "product": "Portfolio",
+    "status": "Disponible",
+    "ok": "SYS.OK"
+  },
   "intro": {
-    "roleLabel": "Développeur Backend & Full-Stack",
+    "roleLabel": "Développeur Full-Stack",
     "headline": "Yassine EL HANAFI",
     "stackLine": "Java · Spring Boot · Angular",
     "description": "Je développe des applications web d'entreprise et financières avec Java, Spring Boot, Angular, PostgreSQL, RabbitMQ et des API REST. Actuellement chez Nexpublica.",
@@ -18,11 +25,34 @@
     "trust1": "Workflows financiers pour des plateformes du secteur public",
     "trust2": "Services backend avec Spring Boot, PostgreSQL, RabbitMQ, OpenFeign",
     "trust3": "Frontends Angular intégrés aux API REST",
-    "contactCta": "Me contacter"
+    "contactCta": "Me contacter",
+    "systemLabel": "Système / Portfolio",
+    "experienceValue": "2022 — Présent",
+    "currentProject": "Nexpublica",
+    "meta": {
+      "location": "Localisation",
+      "role": "Rôle",
+      "experience": "Expérience",
+      "current": "Actuel",
+      "status": "Statut"
+    }
   },
   "about": {
     "heading": "À propos",
-    "description": "Ingénieur Logiciel chez Nexpublica, sur des plateformes de gestion financière pour le secteur public. Je développe des services backend avec Java et Spring Boot, intègre des interfaces Angular aux API REST, et contribue au débogage, à la validation et à la documentation en équipe Agile. Expérience précédente chez Orange Business et Cegedim."
+    "description": "Ingénieur Logiciel chez Nexpublica, sur des plateformes de gestion financière pour le secteur public. Je développe des services backend avec Java et Spring Boot, intègre des interfaces Angular aux API REST, et contribue au débogage, à la validation et à la documentation en équipe Agile. Expérience précédente chez Orange Business et Cegedim.",
+    "systemMeta": "Profil",
+    "roleValue": "Ingénieur Logiciel",
+    "focusValue": "Full-Stack",
+    "stackValue": "Java / Spring / Angular",
+    "currentValue": "Nexpublica",
+    "spec": {
+      "name": "Nom",
+      "role": "Rôle",
+      "focus": "Focus",
+      "stack": "Stack",
+      "location": "Localisation",
+      "current": "Actuel"
+    }
   },
   "contact": {
     "heading": "Contact",
@@ -34,7 +64,8 @@
     "location": "Localisation",
     "email": "Email",
     "phone": "Téléphone",
-    "relocation": "Ouvert à la mobilité internationale"
+    "relocation": "Ouvert à la mobilité internationale",
+    "openChannel": "Canal ouvert"
   },
   "personal": {
     "fullName": "Yassine EL HANAFI",
@@ -47,6 +78,10 @@
     "intro": "Projets Java, Spring Boot et Angular issus de la production et de stages.",
     "featured": "À la une",
     "viewCode": "Voir le code source",
+    "systemMeta": "Modules",
+    "statusFeatured": "À la une",
+    "statusComplete": "Terminé",
+    "source": "Source",
     "cliffford": {
       "title": "Cliffford",
       "summary": "Chatbot contrôlé par gestes avec OpenCV, modèles CNN/LSTM et authentification Firebase.",
@@ -96,6 +131,7 @@
     "intro": "Plateformes financières, systèmes télécom et applications RH livrées avec Java et Spring Boot.",
     "current": "Actuel",
     "skillsLabel": "Technologies",
+    "systemMeta": "Journal",
     "nexpublica": {
       "company": "Nexpublica (ex. Inetum Software)",
       "title": "Ingénieur Logiciel",
@@ -144,6 +180,11 @@
       ]
     }
   },
+  "stack": {
+    "heading": "Technologie",
+    "intro": "Langages, frameworks et outils utilisés en production et en stage.",
+    "systemMeta": "Système / Technologie"
+  },
   "language": {
     "en": "English",
     "fr": "Français",
@@ -158,8 +199,8 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "database": "Base de données",
-      "devops": "DevOps & Outils",
-      "practices": "Pratiques"
+      "devops": "DevOps",
+      "tools": "Outils"
     }
   },
   "footer": {

@@ -1,34 +1,15 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { GITHUB_URL, LINKEDIN_URL } from '../constants/urls';
 import { LanguageSwitcher } from '../ui';
+import { SECTIONS, useActiveSection } from '../hooks/useActiveSection';
 import styles from './SideBar.module.css';
-
-const SECTIONS = ['intro', 'about', 'experience', 'projects', 'contact'] as const;
 
 const SideBar: React.FC = () => {
   const { t } = useTranslation();
-  const [activeSection, setActiveSection] = useState<string>('intro');
-
-  const handleScroll = useCallback(() => {
-    const scrollPosition = window.scrollY + window.innerHeight / 3;
-
-    for (let i = SECTIONS.length - 1; i >= 0; i--) {
-      const element = document.getElementById(SECTIONS[i]);
-      if (element && element.offsetTop <= scrollPosition) {
-        setActiveSection(SECTIONS[i]);
-        break;
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [handleScroll]);
+  const activeSection = useActiveSection();
 
   return (
     <div className={styles.sideRail}>
@@ -45,7 +26,6 @@ const SideBar: React.FC = () => {
                   href={`#${section}`}
                   className={activeSection === section ? styles.active : undefined}
                   aria-current={activeSection === section ? 'true' : undefined}
-                  aria-label={t(`navigation.${section}`)}
                 >
                   /{section}
                 </a>

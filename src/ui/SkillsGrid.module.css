@@ -1,13 +1,11 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border: 1px solid var(--border);
 }
 
 .group {
-  padding: 1.5rem;
+  padding: 1rem 0.875rem 1.125rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -15,7 +13,47 @@
   border-bottom: none;
 }
 
-@media (min-width: 640px) and (max-width: 899px) {
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.index {
+  color: var(--foreground-muted);
+  letter-spacing: 0.06em;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.skills li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--foreground-secondary);
+}
+
+.mark {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: var(--border-strong);
+}
+
+@media (min-width: 640px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -28,41 +66,8 @@
     border-right: none;
   }
 
-  .group:nth-child(5) {
-    grid-column: 1 / -1;
-    border-right: none;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1099px) {
-  .grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .group {
-    border-right: 1px solid var(--border);
-  }
-
-  .group:nth-child(1) {
-    grid-column: 1 / span 2;
-  }
-
-  .group:nth-child(2) {
-    grid-column: 3 / span 2;
-  }
-
-  .group:nth-child(3) {
-    grid-column: 5 / span 2;
-    border-right: none;
-  }
-
-  .group:nth-child(4) {
-    grid-column: 2 / span 2;
-  }
-
-  .group:nth-child(5) {
-    grid-column: 4 / span 2;
-    border-right: none;
+  .group:nth-last-child(-n + 2) {
+    border-bottom: none;
   }
 }
 
@@ -72,33 +77,15 @@
   }
 
   .group {
-    border-right: 1px solid var(--border);
     border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
+
+  .group:nth-child(2n) {
+    border-right: 1px solid var(--border);
   }
 
   .group:last-child {
     border-right: none;
   }
-}
-
-.label {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--foreground-muted);
-  margin-bottom: 0.75rem;
-}
-
-.skills {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.skills li {
-  font-size: 0.9375rem;
-  line-height: 1.5;
-  color: var(--foreground-secondary);
 }

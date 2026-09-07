@@ -1,60 +1,38 @@
-.railWrap {
-  display: flex;
-  align-items: flex-end;
-}
-
-.segment {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2px;
+.group {
+  display: inline-flex;
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--surface);
 }
 
-.indicator {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: calc((100% - 4px) / 3);
-  height: calc(100% - 4px);
-  background: var(--accent-soft);
-  border: 1px solid var(--border-strong);
-  border-radius: calc(var(--radius-sm) - 2px);
-  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-}
-
-.segmentBtn,
-.segmentActive {
-  position: relative;
-  z-index: 1;
-  padding: 0.3125rem 0.5rem;
-  font-family: var(--font-sans);
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+.btn,
+.active {
+  min-width: 1.75rem;
+  padding: 0.25rem 0.375rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   background: none;
   border: none;
+  border-right: 1px solid var(--border);
   cursor: pointer;
-  transition: color var(--transition);
+  transition: color var(--transition), background var(--transition);
 }
 
-.segmentBtn {
+.btn:last-child,
+.active:last-child {
+  border-right: none;
+}
+
+.btn {
   color: var(--foreground-muted);
 }
 
-.segmentBtn:hover {
+.btn:hover {
   color: var(--foreground);
+  background: var(--bg-alt);
 }
 
-.segmentActive {
+.active {
   color: var(--accent);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .indicator {
-    transition: none;
-  }
+  background: var(--accent-soft);
 }

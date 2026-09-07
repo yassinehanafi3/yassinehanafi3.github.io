@@ -1,19 +1,21 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ProjectCard } from '../ui';
+import { Panel, ProjectCard } from '../ui';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="projects" className="container">
-      <p className="sectionLabel">/projects</p>
-      <h2 id="projects-heading" className="title">
-        {t('projects.heading')}
-      </h2>
+    <Panel
+      id="projects"
+      headingId="projects-heading"
+      index="04"
+      label={t('navigation.projects')}
+      meta={t('projects.systemMeta')}
+    >
       <p className="sectionIntro">{t('projects.intro')}</p>
       <ProjectCard />
-    </div>
+    </Panel>
   );
 };
 

@@ -1,3 +1,4 @@
+export { Panel } from './Panel';
 export { ProjectCard } from './ProjectCard';
 export { Timeline } from './Timeline';
 export { SkillsGrid } from './SkillsGrid';
